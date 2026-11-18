@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bw1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="70%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" result="noise"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.07 0"/>
+      <feBlend in="SourceGraphic" in2="noise" mode="overlay"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#bw1)"/>
+  <rect width="800" height="600" fill="url(#sun)"/>
+  
+  <!-- Subtle architectural framing lines -->
+  <line x1="40" y1="40" x2="760" y2="40" stroke="#333333" stroke-width="1"/>
+  <line x1="40" y1="560" x2="760" y2="560" stroke="#333333" stroke-width="1"/>
+  
+  <!-- Rolling Punjab landscape silhouettes -->
+  <path d="M0,450 Q200,380 400,430 T800,400 L800,600 L0,600 Z" fill="#141414"/>
+  <path d="M0,480 Q250,420 500,470 T800,450 L800,600 L0,600 Z" fill="#0d0d0d"/>
+  
+  <!-- Cattle and Pasture silhouettes -->
+  <path d="M180,440 Q190,410 210,410 Q225,410 240,420 Q270,415 290,435 Q300,450 300,480 L290,480 L285,455 L260,455 L255,480 L245,480 L250,445 L220,445 L215,480 L205,480 L210,440 Z" fill="#2d2d2d"/>
+  <path d="M340,430 Q350,400 370,400 Q385,400 400,410 Q430,405 450,425 Q460,440 460,470 L450,470 L445,445 L420,445 L415,470 L405,470 L410,435 L380,435 L375,470 L365,470 L370,430 Z" fill="#222222"/>
+
+  <!-- Acacia trees in backdrop -->
+  <path d="M620,430 C600,340 680,310 700,330 C720,290 770,320 760,360 C780,380 770,420 740,430 L720,470 L700,470 Z" fill="#181818"/>
+  <path d="M110,450 C95,370 160,340 175,360 C190,325 240,350 230,390 C250,405 240,440 215,450 L200,490 L185,490 Z" fill="#181818"/>
+
+  <!-- Minimalist Editorial Badge -->
+  <g transform="translate(60, 80)">
+    <rect width="180" height="32" fill="#144528" rx="4"/>
+    <text x="90" y="21" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#ffffff" letter-spacing="2" text-anchor="middle">STEP 01 • ETHICAL GRAZING</text>
+    <text x="0" y="65" font-family="'Times New Roman', Times, serif" font-size="32" fill="#ffffff">Fresh Punjab Milk</text>
+    <text x="0" y="95" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" fill="#a0a0a0">Grass-fed, ethically managed smallholder dairy collectives.</text>
+  </g>
+  <g transform="translate(680, 530)">
+    <text x="0" y="0" font-family="'Times New Roman', Times, serif" font-size="48" fill="#262626" text-anchor="end">01</text>
+  </g>
+</svg>
