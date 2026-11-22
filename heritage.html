@@ -2,20 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Heritage (2006) — GreenFarms. Twenty Years of Uncompromised Purity</title>
-  <meta name="description" content="Founded in 2006 in Punjab. Discover our 20-year commitment to traditional butter-churned Pure Desi Ghee in 500g premium plastic jars without commercial shortcuts.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Our Heritage (Est. 2006) — GreenFarms. Pure Desi Ghee</title>
+  <meta name="description" content="Discover twenty years of uncompromising Punjab dairy heritage. Founded in 2006, GreenFarms crafts pure Desi Ghee exclusively from slow-churned village butter.">
   
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/images/Crown.png">
-  <!-- Fonts: Times New Roman (Display) & Plus Jakarta Sans (Body) -->
+
+  <!-- Google Fonts: Abril Fatface & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-  <!-- Sticky Header -->
+  <!-- Sticky Luxury Header -->
   <header class="site-header">
     <div class="container nav-container">
       <a href="index.html" class="brand-logo-link" aria-label="GreenFarms Home">
@@ -32,6 +36,11 @@
       </nav>
 
       <div class="nav-actions">
+        <a href="https://wa.me/923332271313?text=Salam%20GreenFarms.%20I%20would%20like%20to%20inquire%20about%20Pure%20Desi%20Ghee." target="_blank" rel="noopener" class="btn btn-secondary btn-pill-sm desktop-only">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+
         <button class="cart-toggle-btn js-cart-toggle" aria-label="Open Cart">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
@@ -40,140 +49,167 @@
           </svg>
           <span class="cart-badge" style="display:none;">0</span>
         </button>
-        <a href="shop.html" class="btn btn-primary btn-pill-sm">Order Now</a>
-        <button class="mobile-menu-btn" aria-label="Open Menu">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+
+        <a href="shop.html" class="btn btn-primary btn-pill-sm desktop-only">Order Now</a>
+
+        <button class="mobile-menu-btn" aria-label="Open Navigation Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
         </button>
       </div>
     </div>
   </header>
 
-  <!-- Mobile Drawer Menu -->
-  <div id="mobile-nav-drawer" class="cart-drawer" style="max-width:340px;">
-    <div class="cart-drawer-header">
+  <!-- Full-Screen Mobile Navigation Drawer -->
+  <div id="mobile-nav-drawer" class="mobile-nav-fullscreen">
+    <div class="mobile-nav-header">
       <div class="brand-logo-link">
-        <img src="assets/images/Crown.png" alt="GreenFarms Logo" style="width:32px; height:32px;">
-        <span class="brand-wordmark" style="font-size:1.6rem;">GreenFarms<span class="dot">.</span></span>
+        <img src="assets/images/Crown.png" alt="GreenFarms Logo" style="width:28px; height:28px;">
+        <span class="brand-wordmark" style="font-size:1.25rem;">GreenFarms<span class="dot">.</span></span>
       </div>
       <button id="mobile-nav-close" class="cart-close-btn" aria-label="Close Menu">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
       </button>
     </div>
-    <div style="padding:24px; display:flex; flex-direction:column; gap:18px;">
-      <a href="index.html" style="font-family:var(--font-display); font-size:1.6rem; color:var(--color-ink);">Home</a>
-      <a href="butter-vs-cream.html" style="font-family:var(--font-display); font-size:1.6rem; color:var(--color-ink);">Butter vs. Cream</a>
-      <a href="heritage.html" style="font-family:var(--font-display); font-size:1.6rem; color:var(--color-primary);">Our Heritage (2006)</a>
-      <a href="shop.html" style="font-family:var(--font-display); font-size:1.6rem; color:var(--color-ink);">Shop &amp; Order</a>
-      <a href="contact.html" style="font-family:var(--font-display); font-size:1.6rem; color:var(--color-ink);">Contact &amp; Wholesale</a>
+    <div class="mobile-nav-body">
+      <a href="index.html" class="mobile-nav-link-item">
+        <span>Home</span>
+        <span>&rarr;</span>
+      </a>
+      <a href="butter-vs-cream.html" class="mobile-nav-link-item">
+        <span>Butter vs. Cream</span>
+        <span>&rarr;</span>
+      </a>
+      <a href="heritage.html" class="mobile-nav-link-item active">
+        <span>Our Heritage (2006)</span>
+        <span>&rarr;</span>
+      </a>
+      <a href="shop.html" class="mobile-nav-link-item">
+        <span>Shop &amp; Order</span>
+        <span>&rarr;</span>
+      </a>
+      <a href="contact.html" class="mobile-nav-link-item">
+        <span>Contact &amp; Wholesale</span>
+        <span>&rarr;</span>
+      </a>
+      <div style="margin-top:auto; padding-top:28px; display:flex; flex-direction:column; gap:12px;">
+        <a href="shop.html" class="btn btn-primary" style="width:100%;">
+          Order Now (PKR 1,500/Jar)
+        </a>
+        <a href="https://wa.me/923332271313" target="_blank" rel="noopener" class="btn btn-secondary" style="width:100%;">
+          WhatsApp (+92 333 227 1313)
+        </a>
+      </div>
     </div>
   </div>
 
   <main>
-    <!-- FULL-BLEED MONOCHROME HERO -->
-    <section class="heritage-hero">
+    <!-- HERITAGE MONOCHROME EDITORIAL HERO -->
+    <section class="monochrome-hero-section">
       <div class="container">
-        <div class="heritage-hero-content">
-          <div class="eyebrow eyebrow-light">PUNJAB HERITAGE ARCHIVES &bull; ESTABLISHED 2006</div>
-          <h1 class="heritage-headline">
-            Twenty Years of Refusing Shortcuts.<br>
-            Founded in 2006.
-          </h1>
-          <p class="editorial-lead" style="color:#cccccc; font-size:1.25rem;">
-            When industrial dairy manufacturers began replacing slow earthen bilona churning with chemical separators and cream centrifuges, GreenFarms was born out of one family's fierce refusal to surrender ancestral purity.
-          </p>
-        </div>
+        <div class="eyebrow" style="color:rgba(255,255,255,0.7);">AUTHENTIC PUNJAB HERITAGE &bull; 2006 TO PRESENT</div>
+        <h1 class="hero-headline" style="color:#ffffff;">
+          Twenty Years of Refusing Shortcuts.<br>
+          Founded in 2006.
+        </h1>
+        <p class="editorial-lead" style="color:rgba(255,255,255,0.85); max-width:820px; margin-top:20px;">
+          In 2006, urban grocery shelves were flooded with quick-clarified cream ghee and industrial fat substitutes. GreenFarms began as a small family resolve in Punjab: to preserve the ancient art of slow-churning whole village curd into pure white butter (<em>makkhan</em>) before gentle clarification. Two decades later, we still never cut a corner.
+        </p>
       </div>
     </section>
 
-    <!-- FOUNDER'S PHILOSOPHY STATEMENT -->
-    <section class="statement-banner bg-white">
-      <div class="container">
-        <blockquote class="statement-quote" style="max-width:960px;">
-          "Purity is not a feature you add in a factory.<br>
-          It is an act of restraint &mdash; knowing what <em>not</em> to compromise."
+    <!-- EDITORIAL QUOTE STRIP -->
+    <section style="background:var(--color-bg); padding: clamp(50px, 7vw, 90px) 0; border-bottom: 1px solid var(--color-border);">
+      <div class="container" style="max-width:1000px; text-align:center;">
+        <span class="eyebrow">OUR PERMANENT COMMITMENT</span>
+        <blockquote style="font-family:var(--font-display); font-size:clamp(1.75rem, 3.2vw, 2.75rem); line-height:1.2; color:var(--color-ink); margin: 18px 0 24px;">
+          "Purity is not a modern marketing strategy. It is the quiet discipline of honoring the ingredient."
         </blockquote>
-        <div class="statement-sub">
-          The GreenFarms Promise &bull; Punjab, Pakistan
+        <div style="color:var(--color-slate); font-weight:600; font-size:1.05rem;">
+          The GreenFarms Family Philosophy &bull; Established 2006, Punjab
         </div>
       </div>
     </section>
 
-    <!-- LARGE-FORMAT VERTICAL TIMELINE (2006 &ndash; 2026) -->
-    <section class="section-editorial bg-alabaster">
+    <!-- VERTICAL HISTORICAL TIMELINE -->
+    <section class="timeline-section">
       <div class="container">
-        <div style="max-width:780px; margin:0 auto clamp(40px, 6vw, 80px); text-align:center;">
-          <div class="eyebrow" style="justify-content:center;">CHRONICLE OF PURITY</div>
-          <h2 class="section-headline">The Two-Decade Journey</h2>
-          <p class="editorial-lead" style="margin:0 auto;">
-            From a humble family kitchen in rural Punjab to Pakistan's benchmark for genuine butter-churned Pure Desi Ghee in 500g premium plastic jars.
+        <div class="section-header-centered" style="margin-bottom: clamp(40px, 6vw, 80px);">
+          <div class="eyebrow">THE CHRONICLE OF PURITY</div>
+          <h2 class="section-title">Two Decades of Refusal &amp; Devotion</h2>
+          <p class="section-subtitle">
+            How a smallholding farm initiative in rural Punjab grew into Pakistan's benchmark for authentic butter-churned Pure Desi Ghee.
           </p>
         </div>
 
-        <div class="timeline-wrap">
-          <!-- 2006 Milestone -->
+        <div class="timeline-container">
+          <!-- 2006 Item -->
           <div class="timeline-item">
             <div class="timeline-year-col">
-              <div class="numeral-huge">2006</div>
+              <span class="numeral-huge">2006</span>
             </div>
             <div class="timeline-content-card">
-              <span class="eyebrow">MILESTONE 01 &bull; THE BEGINNING</span>
-              <h3 class="timeline-item-title">The Kitchen Counter Rebellion</h3>
-              <p class="timeline-item-body">
-                Founded as a dedicated family initiative in Punjab in response to urban markets being flooded with cream-boiled and adulterated ghee. Recognizing that commercial brands had quietly abandoned authentic churning, GreenFarms began sourcing pure village butter from trusted smallholder dairy farmers to craft small-batch ghee strictly for family, neighbors, and word-of-mouth patrons.
+              <span class="eyebrow">GENESIS IN PUNJAB</span>
+              <h3 class="timeline-item-title">The Foundation of GreenFarms.</h3>
+              <p>
+                Founded as a dedicated family enterprise in the fertile dairy heartlands of Punjab. Witnessing commercial processors shift to boiling raw dairy cream using industrial centrifuges, the founders established GreenFarms with one mandate: return to pure cultured butter (<em>makkhan</em>). Initial batches were churned by hand and distributed strictly to close family and community patrons.
               </p>
-              <div class="timeline-item-media">
-                <img src="assets/images/heritage-2006.svg" alt="2006 Heritage Archive Visual">
+              <div style="margin-top:16px; display:inline-flex; align-items:center; gap:8px; font-size:0.875rem; font-weight:600; color:var(--color-primary); background:var(--color-primary-subtle); padding:6px 14px; border-radius:100px;">
+                <span>First Hand-Simmered Batches</span>
               </div>
             </div>
           </div>
 
-          <!-- 2012 Milestone -->
+          <!-- 2012 Item -->
           <div class="timeline-item">
             <div class="timeline-year-col">
-              <div class="numeral-huge">2012</div>
+              <span class="numeral-huge">2012</span>
             </div>
             <div class="timeline-content-card">
-              <span class="eyebrow">MILESTONE 02 &bull; DIRECT COLLECTIVES</span>
-              <h3 class="timeline-item-title">Direct Village Partnerships</h3>
-              <p class="timeline-item-body">
-                As demand spread throughout Lahore and Islamabad, GreenFarms built direct relationships with rural dairy collectives in the Punjab heartland, bypassing exploitative middlemen. By paying premium rates for grass-fed milk and authentic white butter, we guaranteed ethical cattle fodder, honest living wages for village families, and uncompromising churning standards.
+              <span class="eyebrow">FAIR DAIRY ALLIANCES</span>
+              <h3 class="timeline-item-title">Direct Village Smallholder Partnerships</h3>
+              <p>
+                To maintain uncompromised raw milk standards without middlemen adulteration, GreenFarms established direct fair-wage partnerships with traditional dairy smallholders across Punjab villages. Cows and buffaloes graze naturally on green seasonal forage, ensuring high natural beta-carotene content and vibrant golden butterfat.
               </p>
-              <div class="timeline-item-media">
-                <img src="assets/images/heritage-2012.svg" alt="2012 Direct Village Partnerships">
+              <div style="margin-top:16px; display:inline-flex; align-items:center; gap:8px; font-size:0.875rem; font-weight:600; color:var(--color-primary); background:var(--color-primary-subtle); padding:6px 14px; border-radius:100px;">
+                <span>Ethical Grazing &bull; Fair Wages</span>
               </div>
             </div>
           </div>
 
-          <!-- 2018 Milestone -->
+          <!-- 2018 Item -->
           <div class="timeline-item">
             <div class="timeline-year-col">
-              <div class="numeral-huge">2018</div>
+              <span class="numeral-huge">2018</span>
             </div>
             <div class="timeline-content-card">
-              <span class="eyebrow">MILESTONE 03 &bull; INTEGRITY AT SCALE</span>
-              <h3 class="timeline-item-title">Scaling Without Compromise</h3>
-              <p class="timeline-item-body">
-                To meet growing demand from culinary connoisseurs, we expanded our clarification capacity while strictly maintaining our principles: zero industrial cream centrifuges, zero chemical bleaching, zero artificial flavor essences, and no high-pressure boiling. Every batch continued to simmer slowly in heavy vessels over low flame.
+              <span class="eyebrow">SCALING INTEGRITY</span>
+              <h3 class="timeline-item-title">Rejecting Industrial Shortcuts</h3>
+              <p>
+                As nationwide demand surged, commercial consultants recommended high-heat steam distillation and centrifugal cream separation to cut clarification time from 4 hours down to 20 minutes. GreenFarms firmly rejected these shortcuts, investing instead in specialized small-batch brass cauldrons to preserve the delicate nutty flavor and crystalline <em>danedar</em> granulations.
               </p>
-              <div class="timeline-item-media">
-                <img src="assets/images/heritage-2018.svg" alt="2018 Scaling Without Compromise">
+              <div style="margin-top:16px; display:inline-flex; align-items:center; gap:8px; font-size:0.875rem; font-weight:600; color:var(--color-primary); background:var(--color-primary-subtle); padding:6px 14px; border-radius:100px;">
+                <span>Zero Chemicals &bull; Low-Flame Clarification</span>
               </div>
             </div>
           </div>
 
-          <!-- 2026 Milestone -->
+          <!-- 2026 Item -->
           <div class="timeline-item">
             <div class="timeline-year-col">
-              <div class="numeral-huge" style="color:var(--color-primary);">2026</div>
+              <span class="numeral-huge">2026</span>
             </div>
-            <div class="timeline-content-card" style="border:2px solid var(--color-primary);">
-              <span class="eyebrow">MILESTONE 04 &bull; TWENTY-YEAR LEGACY</span>
-              <h3 class="timeline-item-title">The Uncompromised Gold Standard</h3>
-              <p class="timeline-item-body">
-                Today, GreenFarms delivers lab-verified, butter-churned Pure Desi Ghee in 500g premium shatterproof plastic jars directly to homes and culinary professionals across Pakistan. With independent laboratory verification on every batch (99.8% milkfat, zero palm oil or vanaspati adulteration), we honor the exact artisanal process we set out with in 2006.
+            <div class="timeline-content-card">
+              <span class="eyebrow">THE MODERN PURITY BENCHMARK</span>
+              <h3 class="timeline-item-title">500g Premium Shatterproof Jars Nationwide</h3>
+              <p>
+                Celebrating twenty years of relentless dedication. GreenFarms now delivers lab-certified Pure Desi Ghee nationwide across Pakistan in premium 500g food-grade plastic jars with airtight induction seals. With 99.8% milk fat purity, Reichert-Meissl testing, and doorstep Cash on Delivery, we bring authentic heritage taste straight from the village churn to modern homes.
               </p>
-              <div class="timeline-item-media">
-                <img src="assets/images/heritage-2026.svg" alt="2026 The Gold Standard of Purity">
+              <div style="margin-top:16px; display:inline-flex; align-items:center; gap:8px; font-size:0.875rem; font-weight:600; color:var(--color-primary); background:var(--color-primary-subtle); padding:6px 14px; border-radius:100px;">
+                <span>PKR 1,500 / 500g &bull; Lab Certified Purity</span>
               </div>
             </div>
           </div>
@@ -181,61 +217,90 @@
       </div>
     </section>
 
-    <!-- MONOCHROME EDITORIAL GALLERY GRID -->
-    <section class="section-editorial bg-white">
+    <!-- ARCHIVAL GALLERY / METHODOLOGY SHOWCASE -->
+    <section style="background:var(--color-alabaster); padding: var(--section-padding-y) 0; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
       <div class="container">
-        <div style="max-width:800px; margin:0 auto clamp(40px, 5vw, 60px); text-align:center;">
-          <div class="eyebrow" style="justify-content:center;">ARCHIVAL GLIMPSES</div>
-          <h2 class="section-headline">The Village Craft In Focus</h2>
-          <p class="editorial-lead" style="margin:0 auto;">
-            A visual documentation of the timeless rituals behind every golden spoonful of GreenFarms ghee.
-          </p>
+        <div class="section-header-centered" style="margin-bottom: clamp(36px, 5vw, 64px);">
+          <div class="eyebrow">AUTHENTIC VISUAL ARCHIVES</div>
+          <h2 class="section-title">The Craft That Never Changed</h2>
+          <p class="section-subtitle">A glimpse into the unchanged village traditions that yield our golden crystalline ghee.</p>
         </div>
 
-        <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:clamp(20px, 3vw, 40px);">
-          <div style="border-radius:20px; overflow:hidden; border:1px solid var(--color-border); box-shadow:var(--shadow-card);">
-            <img src="assets/images/craft-step1.svg" alt="Punjab Pastures and Grazing Cattle" style="width:100%; aspect-ratio:16/10; object-fit:cover;">
-            <div style="padding:24px; background:#ffffff;">
-              <h4 style="font-family:var(--font-display); font-size:1.35rem; color:var(--color-ink); margin-bottom:6px;">Lush Punjab Pastures</h4>
-              <p style="font-size:0.95rem; color:var(--color-slate);">Ethically grazed dairy herds fed on seasonal green berseem and clean well water.</p>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:24px;">
+          <!-- Card 1 -->
+          <div style="background:#ffffff; border-radius:16px; overflow:hidden; border:1px solid var(--color-border); box-shadow:var(--shadow-subtle);">
+            <div style="height:200px; background:#144528; display:flex; align-items:center; justify-content:center; padding:20px;">
+              <img src="assets/images/craft-step1.svg" alt="Punjab Grazing" style="max-height:160px; filter:brightness(0) invert(1);">
+            </div>
+            <div style="padding:24px 20px;">
+              <span class="eyebrow">HERITAGE STEP 01</span>
+              <h3 style="font-family:var(--font-display); font-size:1.4rem; color:var(--color-ink); margin:8px 0 10px;">Free-Range Forage</h3>
+              <p style="font-size:0.925rem; color:var(--color-slate); line-height:1.6;">Our partner herds graze freely on natural Punjab grasslands, producing naturally nutrient-dense milk rich in fat-soluble vitamins.</p>
             </div>
           </div>
 
-          <div style="border-radius:20px; overflow:hidden; border:1px solid var(--color-border); box-shadow:var(--shadow-card);">
-            <img src="assets/images/craft-step2.svg" alt="Slow Bilona Butter Churning" style="width:100%; aspect-ratio:16/10; object-fit:cover;">
-            <div style="padding:24px; background:#ffffff;">
-              <h4 style="font-family:var(--font-display); font-size:1.35rem; color:var(--color-ink); margin-bottom:6px;">Cultured Butter Churning</h4>
-              <p style="font-size:0.95rem; color:var(--color-slate);">Bilateral wooden agitation separating fragrant makkhan from mineral-rich buttermilk.</p>
+          <!-- Card 2 -->
+          <div style="background:#ffffff; border-radius:16px; overflow:hidden; border:1px solid var(--color-border); box-shadow:var(--shadow-subtle);">
+            <div style="height:200px; background:#0d0d0d; display:flex; align-items:center; justify-content:center; padding:20px;">
+              <img src="assets/images/craft-step2.svg" alt="Traditional Churn" style="max-height:160px; filter:brightness(0) invert(1);">
+            </div>
+            <div style="padding:24px 20px;">
+              <span class="eyebrow">HERITAGE STEP 02</span>
+              <h3 style="font-family:var(--font-display); font-size:1.4rem; color:var(--color-ink); margin:8px 0 10px;">Bilona Churning</h3>
+              <p style="font-size:0.925rem; color:var(--color-slate); line-height:1.6;">Cultured whole milk is churned bi-directionally to separate light, aromatic butterfat (<em>makkhan</em>) from nourishing buttermilk.</p>
             </div>
           </div>
 
-          <div style="border-radius:20px; overflow:hidden; border:1px solid var(--color-border); box-shadow:var(--shadow-card);">
-            <img src="assets/images/craft-step3.svg" alt="Gentle Brass Vessel Clarification" style="width:100%; aspect-ratio:16/10; object-fit:cover;">
-            <div style="padding:24px; background:#ffffff;">
-              <h4 style="font-family:var(--font-display); font-size:1.35rem; color:var(--color-ink); margin-bottom:6px;">Low-Flame Brass Simmering</h4>
-              <p style="font-size:0.95rem; color:var(--color-slate);">Patient clarification releasing golden aroma while milk solids gently settle.</p>
+          <!-- Card 3 -->
+          <div style="background:#ffffff; border-radius:16px; overflow:hidden; border:1px solid var(--color-border); box-shadow:var(--shadow-subtle);">
+            <div style="height:200px; background:#1c5b36; display:flex; align-items:center; justify-content:center; padding:20px;">
+              <img src="assets/images/craft-step3.svg" alt="Brass Clarification" style="max-height:160px; filter:brightness(0) invert(1);">
+            </div>
+            <div style="padding:24px 20px;">
+              <span class="eyebrow">HERITAGE STEP 03</span>
+              <h3 style="font-family:var(--font-display); font-size:1.4rem; color:var(--color-ink); margin:8px 0 10px;">Slow Simmering</h3>
+              <p style="font-size:0.925rem; color:var(--color-slate); line-height:1.6;">Low-flame simmering in heavy brass cauldrons gently evaporates moisture and caramelizes milk solids into sweet golden crystals.</p>
             </div>
           </div>
 
-          <div style="border-radius:20px; overflow:hidden; border:1px solid var(--color-border); box-shadow:var(--shadow-card);">
-            <img src="assets/images/craft-step4.svg" alt="Laboratory Verification & UV Jar Sealing" style="width:100%; aspect-ratio:16/10; object-fit:cover;">
-            <div style="padding:24px; background:#ffffff;">
-              <h4 style="font-family:var(--font-display); font-size:1.35rem; color:var(--color-ink); margin-bottom:6px;">Lab Testing &amp; 500g Jar Sealing</h4>
-              <p style="font-size:0.95rem; color:var(--color-slate);">Rigorous batch analysis ensuring 99.8% milkfat before packing into shatterproof 500g plastic jars.</p>
+          <!-- Card 4 -->
+          <div style="background:#ffffff; border-radius:16px; overflow:hidden; border:1px solid var(--color-border); box-shadow:var(--shadow-subtle);">
+            <div style="height:200px; background:#2c3e2e; display:flex; align-items:center; justify-content:center; padding:20px;">
+              <img src="assets/images/craft-step4.svg" alt="Jar Sealing" style="max-height:160px; filter:brightness(0) invert(1);">
+            </div>
+            <div style="padding:24px 20px;">
+              <span class="eyebrow">HERITAGE STEP 04</span>
+              <h3 style="font-family:var(--font-display); font-size:1.4rem; color:var(--color-ink); margin:8px 0 10px;">Airtight Preservation</h3>
+              <p style="font-size:0.925rem; color:var(--color-slate); line-height:1.6;">Poured warm into 500g premium food-grade plastic jars, creating a protective airtight seal that maintains peak freshness for 12 months.</p>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div style="text-align:center; margin-top: clamp(50px, 6vw, 80px);">
-          <a href="shop.html" class="btn btn-primary btn-pill-lg">
-            Order From Our Latest 2026 Batch (500g Jars)
+    <!-- CALL TO ACTION BANNER -->
+    <section class="editorial-cta-section">
+      <div class="container" style="position:relative; z-index:2; text-align:center;">
+        <div class="eyebrow" style="color:rgba(255,255,255,0.7);">TASTE THE DIFFERENCE OF 20 YEARS</div>
+        <h2 class="section-title" style="color:#ffffff; margin-bottom:20px;">
+          Bring Pure Village Butter Ghee to Your Family Kitchen.
+        </h2>
+        <p style="color:rgba(255,255,255,0.85); font-size:1.15rem; max-width:680px; margin:0 auto 32px; line-height:1.6;">
+          PKR 1,500 per 500g premium shatterproof jar. Free nationwide express delivery across Pakistan on 2 or more jars.
+        </p>
+        <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+          <a href="shop.html" class="btn btn-pill-lg" style="background:#ffffff; color:var(--color-primary); font-weight:700;">
+            Order 500g Jar (PKR 1,500)
+          </a>
+          <a href="https://wa.me/923332271313" target="_blank" rel="noopener" class="btn btn-pill-lg" style="border:1.5px solid rgba(255,255,255,0.6); color:#ffffff; background:transparent;">
+            WhatsApp Concierge (+92 333 227 1313)
           </a>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- CART & MODALS -->
+  <!-- CART SLIDE-OUT DRAWER -->
   <div id="cart-backdrop" class="cart-backdrop"></div>
   <aside id="cart-drawer" class="cart-drawer" aria-label="Shopping Cart">
     <div class="cart-drawer-header">
@@ -244,27 +309,49 @@
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
       </button>
     </div>
+
     <div class="shipping-meter-wrap">
       <div id="shipping-meter-text">Add <strong>PKR 3,000</strong> for <strong>FREE Delivery</strong></div>
-      <div class="shipping-meter-bar"><div id="shipping-progress" class="shipping-meter-progress"></div></div>
+      <div class="shipping-meter-bar">
+        <div id="shipping-progress" class="shipping-meter-progress"></div>
+      </div>
     </div>
+
     <div id="cart-items-container" class="cart-items-list"></div>
+
     <div id="cart-empty-view" class="cart-empty-state">
+      <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.5" style="margin:0 auto;"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
       <div class="cart-empty-title">Your Cart is Empty</div>
-      <p style="color:#777; font-size:0.95rem; margin-bottom:20px;">Experience the purity of traditional butter-churned Desi Ghee in 500g premium plastic jars.</p>
+      <p style="color:#777; font-size:0.9rem; margin-bottom:18px;">Experience the purity of traditional butter-churned Desi Ghee in 500g premium plastic jars.</p>
       <a href="shop.html" onclick="closeCart()" class="btn btn-primary btn-pill-sm">Explore Shop</a>
     </div>
+
     <div id="cart-footer-view" class="cart-drawer-footer" style="display:none;">
-      <div class="cart-total-row"><span>Subtotal</span><strong id="cart-subtotal-val">PKR 0</strong></div>
-      <div class="cart-total-row"><span>Delivery</span><strong id="cart-shipping-val">PKR 250</strong></div>
-      <div class="cart-total-row cart-grand-total"><span>Total Payable (COD):</span><span id="cart-grand-total-val" class="num">PKR 0</span></div>
+      <div class="cart-total-row">
+        <span>Subtotal</span>
+        <strong id="cart-subtotal-val">PKR 0</strong>
+      </div>
+      <div class="cart-total-row">
+        <span>Delivery (Across Pakistan)</span>
+        <strong id="cart-shipping-val">PKR 250</strong>
+      </div>
+      <div class="cart-total-row cart-grand-total">
+        <span>Total Payable (COD):</span>
+        <span id="cart-grand-total-val" class="num">PKR 0</span>
+      </div>
+
       <div class="cart-checkout-actions">
-        <button onclick="CODCheckout.open()" class="btn btn-primary" style="width:100%; border-radius:12px;">Cash on Delivery Checkout &rarr;</button>
-        <button onclick="sendWhatsAppOrder()" class="btn btn-secondary" style="width:100%; border-radius:12px;">Order via WhatsApp</button>
+        <button onclick="CODCheckout.open()" class="btn btn-primary" style="width:100%; border-radius:12px;">
+          Cash on Delivery Checkout &rarr;
+        </button>
+        <button onclick="sendWhatsAppOrder()" class="btn btn-secondary" style="width:100%; border-radius:12px;">
+          Quick Order via WhatsApp
+        </button>
       </div>
     </div>
   </aside>
 
+  <!-- COD CHECKOUT MODAL -->
   <div id="cod-modal" class="modal-backdrop">
     <div class="modal-box">
       <button class="modal-close-x" onclick="CODCheckout.close()" aria-label="Close Modal">
@@ -272,24 +359,121 @@
       </button>
       <div id="cod-modal-content">
         <div class="eyebrow">FAST &amp; SECURE CHECKOUT</div>
-        <h2 style="font-family:var(--font-display); font-size:2.2rem; color:var(--color-ink); margin-bottom:12px;">Cash on Delivery Order</h2>
-        <div style="background:var(--color-alabaster); padding:16px 20px; border-radius:16px; margin-bottom:24px; border:1px solid var(--color-border);">
+        <h2 style="font-family:var(--font-display); font-size:2rem; color:var(--color-ink); margin-bottom:10px;">
+          Cash on Delivery Order
+        </h2>
+        <p style="color:#666; font-size:0.95rem; margin-bottom:20px;">
+          Fill in your doorstep delivery details. Pay in cash when the courier arrives.
+        </p>
+
+        <div style="background:var(--color-alabaster); padding:14px 18px; border-radius:14px; margin-bottom:20px; border:1px solid var(--color-border);">
           <div id="cod-summary-list"></div>
-          <div style="display:flex; justify-content:space-between; margin-top:12px; padding-top:10px; border-top:1.5px solid #0d0d0d; font-size:1.15rem; font-weight:700;">
-            <span>Grand Total:</span><span id="cod-total-amount" style="color:var(--color-primary); font-family:var(--font-display);">PKR 0</span>
+          <div style="display:flex; justify-content:space-between; margin-top:10px; padding-top:8px; border-top:1.5px solid #0d0d0d; font-size:1.1rem; font-weight:700;">
+            <span>Grand Total:</span>
+            <span id="cod-total-amount" style="color:var(--color-primary); font-family:var(--font-display);">PKR 0</span>
           </div>
         </div>
+
         <form id="cod-form" onsubmit="CODCheckout.submit(event)">
-          <div class="form-group"><label class="form-label" for="customer_name">Full Name *</label><input type="text" id="customer_name" name="customer_name" class="form-control" placeholder="e.g. Tariq Mehmood" required></div>
-          <div class="form-group"><label class="form-label" for="customer_phone">Phone / WhatsApp Number *</label><input type="tel" id="customer_phone" name="customer_phone" class="form-control" placeholder="e.g. 0333 1234567" required></div>
-          <div class="form-group"><label class="form-label" for="customer_city">Delivery City *</label><input type="text" id="customer_city" name="customer_city" class="form-control" placeholder="e.g. Lahore, Karachi, Islamabad..." required></div>
-          <div class="form-group"><label class="form-label" for="customer_address">Full Street / House Address *</label><textarea id="customer_address" name="customer_address" class="form-control" placeholder="House #, Street #, Sector / Colony" required></textarea></div>
-          <button type="submit" class="btn btn-primary" style="width:100%; border-radius:12px; padding:18px; font-size:1.1rem; margin-top:12px;">Confirm Cash on Delivery Order &rarr;</button>
+          <div class="form-group">
+            <label class="form-label" for="customer_name">Full Name *</label>
+            <input type="text" id="customer_name" name="customer_name" class="form-control" placeholder="e.g. Tariq Mehmood" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="customer_phone">Phone / WhatsApp Number *</label>
+            <input type="tel" id="customer_phone" name="customer_phone" class="form-control" placeholder="e.g. 0333 1234567" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="customer_city">Delivery City *</label>
+            <input type="text" id="customer_city" name="customer_city" class="form-control" placeholder="e.g. Lahore, Karachi, Islamabad..." required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="customer_address">Full Street / House Address *</label>
+            <textarea id="customer_address" name="customer_address" class="form-control" placeholder="House #, Street #, Sector / Colony" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%; border-radius:12px; padding:16px; font-size:1.05rem; margin-top:10px;">
+            Confirm Cash on Delivery Order &rarr;
+          </button>
         </form>
       </div>
     </div>
   </div>
 
+  <!-- LAB CERTIFICATE MODAL -->
+  <div id="lab-cert-modal" class="modal-backdrop">
+    <div class="modal-box" style="max-width:680px;">
+      <button class="modal-close-x" onclick="LabModal.close()" aria-label="Close Modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="lab-cert-header">
+        <div>
+          <span style="font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--color-primary); font-weight:700;">OFFICIAL CERTIFICATE OF ANALYSIS</span>
+          <h3 style="font-family:var(--font-display); font-size:1.75rem; color:var(--color-ink);">GreenFarms. Laboratory Verification</h3>
+        </div>
+        <div>
+          <span class="cert-pass-pill">100% PASS</span>
+          <div style="font-size:0.8125rem; color:#777; margin-top:4px;">Batch: #GF-2026-B9</div>
+        </div>
+      </div>
+
+      <p style="font-size:0.95rem; color:#555; line-height:1.6; margin-bottom:16px;">
+        Every single harvest of GreenFarms Pure Desi Ghee is independently analyzed for fat purity, volatile fatty acid profile (Reichert-Meissl test), and zero foreign vegetable or animal fat adulteration.
+      </p>
+
+      <table class="lab-cert-table">
+        <thead>
+          <tr>
+            <th>Test Parameter</th>
+            <th>Standard Requirement</th>
+            <th>GreenFarms Tested Value</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Milk Fat Purity</strong></td>
+            <td>Min 99.0%</td>
+            <td style="color:var(--color-primary); font-weight:700;">99.82%</td>
+            <td><span class="cert-pass-pill">Compliant</span></td>
+          </tr>
+          <tr>
+            <td><strong>Moisture Content</strong></td>
+            <td>Max 0.3%</td>
+            <td style="color:var(--color-primary); font-weight:700;">0.14%</td>
+            <td><span class="cert-pass-pill">Compliant</span></td>
+          </tr>
+          <tr>
+            <td><strong>Reichert-Meissl (RM) Value</strong></td>
+            <td>Min 26.0 (Butter Fat Marker)</td>
+            <td style="color:var(--color-primary); font-weight:700;">28.6</td>
+            <td><span class="cert-pass-pill">Pure Butter</span></td>
+          </tr>
+          <tr>
+            <td><strong>Baudouin Test (Vanaspati Fat)</strong></td>
+            <td>Negative</td>
+            <td style="color:var(--color-primary); font-weight:700;">Negative (0.00%)</td>
+            <td><span class="cert-pass-pill">Absence Verified</span></td>
+          </tr>
+          <tr>
+            <td><strong>Added Colors &amp; Flavors</strong></td>
+            <td>Nil</td>
+            <td style="color:var(--color-primary); font-weight:700;">Zero (Natural Golden Carotene)</td>
+            <td><span class="cert-pass-pill">Pure</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="margin-top:20px; padding:14px; background:#f0f6f2; border-radius:12px; font-size:0.875rem; color:#144528;">
+        <strong>Purity Guarantee:</strong> GreenFarms guarantees 100% refund plus lab test reimbursement if any GreenFarms jar fails accredited food laboratory purity testing.
+      </div>
+    </div>
+  </div>
+
+  <!-- GLOBAL FOOTER -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
@@ -297,42 +481,56 @@
           <img src="assets/images/Crown.png" alt="GreenFarms Icon" class="brand-icon">
           <span class="brand-wordmark" style="color:#ffffff;">GreenFarms<span class="dot" style="color:#25D366;">.</span></span>
         </a>
-        <p class="footer-brand-bio">Pure Desi Ghee crafted strictly from slow-churned village butter (<em>makkhan</em>) in 500g premium food-grade plastic jars. Established in Punjab in 2006.</p>
-        <div style="margin-top:20px; font-size:0.875rem; color:#888;">
+        <p class="footer-brand-bio">
+          Pure Desi Ghee crafted strictly from slow-churned village butter (<em>makkhan</em>) in 500g premium food-grade plastic jars. Established in Punjab in 2006. Unprocessed. Uncompromised. Unmatched.
+        </p>
+        <div style="margin-top:18px; font-size:0.875rem; color:#888;">
           WhatsApp: <strong style="color:#ffffff;">+92 333 227 1313</strong><br>
           Email: <strong style="color:#ffffff;">thegreenfarm01@gmail.com</strong>
         </div>
       </div>
+
       <div>
         <div class="footer-col-title">Navigation</div>
         <div class="footer-links-list">
-          <a href="index.html" class="footer-link">Home</a>
+          <a href="index.html" class="footer-link">Home Flagship</a>
           <a href="butter-vs-cream.html" class="footer-link">Butter vs. Cream</a>
           <a href="heritage.html" class="footer-link">Our Heritage (2006)</a>
-          <a href="shop.html" class="footer-link">Shop</a>
-          <a href="contact.html" class="footer-link">Contact</a>
+          <a href="shop.html" class="footer-link">Shop &amp; Pricing</a>
+          <a href="contact.html" class="footer-link">Contact &amp; Wholesale</a>
         </div>
       </div>
+
       <div>
         <div class="footer-col-title">The Purity Standard</div>
         <div class="footer-links-list">
-          <a href="shop.html" class="footer-link">Order Pure Ghee</a>
-          <a href="butter-vs-cream.html" class="footer-link">Danedar Texture</a>
-          <a href="heritage.html" class="footer-link">The 2006 Origin</a>
-          <a href="contact.html" class="footer-link">Wholesale Supply</a>
+          <a href="javascript:void(0)" onclick="LabModal.open()" class="footer-link">Lab Certificate of Analysis</a>
+          <a href="butter-vs-cream.html" class="footer-link">Bilona Churning Process</a>
+          <a href="shop.html" class="footer-link">500g Shatterproof Jars</a>
+          <a href="contact.html" class="footer-link">Bulk Kitchen Supply</a>
         </div>
       </div>
+
       <div>
         <div class="footer-col-title">Direct Order Assistance</div>
-        <p style="font-size:0.95rem; color:#a0a0a0; margin-bottom:16px;">Have questions about our current batch? Message us directly on WhatsApp.</p>
+        <p style="font-size:0.95rem; color:#a0a0a0; line-height:1.6; margin-bottom:14px;">
+          Have questions about our history or placing an order? Contact our Punjab dairy concierge directly.
+        </p>
         <a href="https://wa.me/923332271313" target="_blank" rel="noopener" class="btn btn-secondary" style="width:100%; border-radius:12px; font-size:0.95rem; color:#ffffff; border-color:rgba(255,255,255,0.3);">
           Chat on WhatsApp (+92 333 227 1313)
         </a>
       </div>
     </div>
+
     <div class="container footer-bottom-bar">
       <div>&copy; 2006&ndash;2026 GreenFarms. All Rights Reserved. Pure Desi Ghee Made From Butter.</div>
-      <div>Delivering Across Pakistan via Cash On Delivery</div>
+      <div style="display:flex; gap:16px; flex-wrap:wrap;">
+        <span>500g Premium Plastic Jars</span>
+        <span>&bull;</span>
+        <span>Lab Verified</span>
+        <span>&bull;</span>
+        <span>Nationwide COD</span>
+      </div>
     </div>
   </footer>
 

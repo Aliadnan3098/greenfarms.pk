@@ -2,20 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <title>Butter vs. Cream — The GreenFarms Difference</title>
   <meta name="description" content="Discover why most commercial ghee is boiled from cream while GreenFarms is slow-churned from pure village butter. 500g premium plastic jars.">
   
   <link rel="icon" type="image/png" href="assets/images/Crown.png">
-  <!-- Fonts: Times New Roman (Display) & Plus Jakarta Sans (Body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-  <!-- Sticky Header -->
+  <!-- Sticky Luxury Header -->
   <header class="site-header">
     <div class="container nav-container">
       <a href="index.html" class="brand-logo-link" aria-label="GreenFarms Home">
@@ -32,6 +31,11 @@
       </nav>
 
       <div class="nav-actions">
+        <a href="https://wa.me/923332271313?text=Salam%20GreenFarms.%20I%20would%20like%20to%20inquire%20about%20Pure%20Desi%20Ghee." target="_blank" rel="noopener" class="btn btn-secondary btn-pill-sm desktop-only">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+
         <button class="cart-toggle-btn js-cart-toggle" aria-label="Open Cart">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
@@ -40,55 +44,84 @@
           </svg>
           <span class="cart-badge" style="display:none;">0</span>
         </button>
-        <a href="shop.html" class="btn btn-primary btn-pill-sm">Order Now</a>
-        <button class="mobile-menu-btn" aria-label="Open Menu">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+
+        <a href="shop.html" class="btn btn-primary btn-pill-sm desktop-only">Order Now</a>
+
+        <button class="mobile-menu-btn" aria-label="Open Navigation Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
         </button>
       </div>
     </div>
   </header>
 
-  <!-- Mobile Drawer Menu -->
-  <div id="mobile-nav-drawer" class="cart-drawer" style="max-width:340px;">
-    <div class="cart-drawer-header">
+  <!-- Full-Screen Mobile Navigation Drawer -->
+  <div id="mobile-nav-drawer" class="mobile-nav-fullscreen">
+    <div class="mobile-nav-header">
       <div class="brand-logo-link">
-        <img src="assets/images/Crown.png" alt="GreenFarms Logo" style="width:32px; height:32px;">
-        <span class="brand-wordmark" style="font-size:1.6rem;">GreenFarms<span class="dot">.</span></span>
+        <img src="assets/images/Crown.png" alt="GreenFarms Logo" style="width:28px; height:28px;">
+        <span class="brand-wordmark" style="font-size:1.25rem;">GreenFarms<span class="dot">.</span></span>
       </div>
       <button id="mobile-nav-close" class="cart-close-btn" aria-label="Close Menu">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
       </button>
     </div>
-    <div style="padding:24px; display:flex; flex-direction:column; gap:18px;">
-      <a href="index.html" style="font-family:var(--font-display); font-size:1.6rem; color:var(--color-ink);">Home</a>
-      <a href="butter-vs-cream.html" style="font-family:var(--font-display); font-size:1.6rem; color:var(--color-primary);">Butter vs. Cream</a>
-      <a href="heritage.html" style="font-family:var(--font-display); font-size:1.6rem; color:var(--color-ink);">Our Heritage (2006)</a>
-      <a href="shop.html" style="font-family:var(--font-display); font-size:1.6rem; color:var(--color-ink);">Shop &amp; Order</a>
-      <a href="contact.html" style="font-family:var(--font-display); font-size:1.6rem; color:var(--color-ink);">Contact &amp; Wholesale</a>
+    <div class="mobile-nav-body">
+      <a href="index.html" class="mobile-nav-link-item">
+        <span>Home</span>
+        <span>&rarr;</span>
+      </a>
+      <a href="butter-vs-cream.html" class="mobile-nav-link-item active">
+        <span>Butter vs. Cream</span>
+        <span>&rarr;</span>
+      </a>
+      <a href="heritage.html" class="mobile-nav-link-item">
+        <span>Our Heritage (2006)</span>
+        <span>&rarr;</span>
+      </a>
+      <a href="shop.html" class="mobile-nav-link-item">
+        <span>Shop &amp; Order</span>
+        <span>&rarr;</span>
+      </a>
+      <a href="contact.html" class="mobile-nav-link-item">
+        <span>Contact &amp; Wholesale</span>
+        <span>&rarr;</span>
+      </a>
+      <div style="margin-top:auto; padding-top:28px; display:flex; flex-direction:column; gap:12px;">
+        <a href="shop.html" class="btn btn-primary" style="width:100%;">
+          Order Now (PKR 1,500/Jar)
+        </a>
+        <a href="https://wa.me/923332271313" target="_blank" rel="noopener" class="btn btn-secondary" style="width:100%;">
+          WhatsApp (+92 333 227 1313)
+        </a>
+      </div>
     </div>
   </div>
 
   <main>
     <!-- EDITORIAL HERO STATEMENT -->
-    <section class="section-editorial bg-white" style="padding-top: clamp(80px, 10vw, 120px); padding-bottom: clamp(60px, 8vw, 90px);">
-      <div class="container" style="text-align:center; max-width:980px;">
+    <section class="section-editorial bg-white" style="padding-top: clamp(48px, 7vw, 90px); padding-bottom: clamp(36px, 5vw, 70px);">
+      <div class="container" style="text-align:center; max-width:960px;">
         <div class="eyebrow" style="justify-content:center;">THE CULINARY TRUTH</div>
-        <h1 class="hero-headline" style="margin-bottom:1.75rem;">
+        <h1 class="hero-headline" style="margin-bottom:1.5rem;">
           Most Ghee Starts With Cream.<br>
           Ours Begins With Churned Butter.
         </h1>
-        <p class="editorial-lead" style="margin:0 auto 2.5rem; font-size:1.25rem;">
+        <p class="editorial-lead" style="margin:0 auto 2rem;">
           In modern factories, milk is passed through industrial centrifuges to separate raw cream, which is then scorched at extreme temperatures. GreenFarms refuses this shortcut: we culture the milk, slow-churn it into authentic village butter (<em>makkhan</em>), and simmer it on low flame. Sealed in 500g premium plastic jars for effortless handling and zero breakage.
         </p>
 
         <!-- Big Visual Comparison Infographic -->
-        <div style="margin-top:2.5rem; border-radius:24px; overflow:hidden; box-shadow:var(--shadow-card); border:1px solid var(--color-border);">
+        <div style="margin-top:2rem; border-radius:20px; overflow:hidden; box-shadow:var(--shadow-card); border:1px solid var(--color-border); width:100%;">
           <img src="assets/images/danedar-texture.svg" alt="Danedar Crystals vs Cream Ghee Texture Comparison" style="width:100%;">
         </div>
       </div>
     </section>
 
-    <!-- BIG ARCHITECTURAL COMPARISON MATRIX -->
+    <!-- ARCHITECTURAL COMPARISON: TABLE ON DESKTOP & STACKED CARDS ON MOBILE -->
     <section class="section-editorial bg-alabaster">
       <div class="container">
         <div style="max-width:800px; margin:0 auto; text-align:center;">
@@ -99,6 +132,7 @@
           </p>
         </div>
 
+        <!-- 1. Desktop Side-by-Side Table (Hidden on Mobile < 768px) -->
         <div class="comparison-table-wrap">
           <table class="comparison-table">
             <thead>
@@ -114,8 +148,8 @@
                   </div>
                 </th>
                 <th class="col-commercial">
-                  <div style="font-size:0.875rem; color:#888; text-transform:uppercase; font-weight:700; letter-spacing:0.08em; margin-bottom:4px;">Commercial Industry</div>
-                  <div style="font-family:var(--font-display); font-size:1.6rem; color:#555;">Industrial Brands</div>
+                  <div style="font-size:0.8125rem; color:#888; text-transform:uppercase; font-weight:700; letter-spacing:0.08em; margin-bottom:4px;">Commercial Industry</div>
+                  <div style="font-family:var(--font-display); font-size:1.5rem; color:#555;">Industrial Brands</div>
                   <span style="font-size:0.875rem; color:#888;">Direct Cream-Boiled Shortcut</span>
                 </th>
               </tr>
@@ -126,14 +160,14 @@
                 <td><strong>Raw Material Base</strong></td>
                 <td class="col-greenfarms">
                   <div class="cell-highlight-title">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
                     100% Cultured Village Butter (Makkhan)
                   </div>
                   Fresh Punjab milk is cultured with natural dahi cultures, then churned into pure white village butter before simmering.
                 </td>
                 <td>
                   <div class="cell-highlight-commercial-title">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                     Industrial Centrifuge Raw Cream
                   </div>
                   Raw cream is spun out of raw milk mechanically and boiled directly without fermentation or butter churning.
@@ -145,14 +179,14 @@
                 <td><strong>Texture &amp; Aroma Profile</strong></td>
                 <td class="col-greenfarms">
                   <div class="cell-highlight-title">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
                     Granular Danedar Crystals &amp; Nutty Bouquet
                   </div>
                   Slow simmering allows triglyceride crystals to form naturally. Melts on the tongue with a sweet, nutty, caramelized fragrance.
                 </td>
                 <td>
                   <div class="cell-highlight-commercial-title">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                     Flat, Greasy, Waxy Paste
                   </div>
                   Scorched at high heat, destroying grain matrix. Lacks deep aroma; leaves an oily film on palate. Often artificially scented.
@@ -164,14 +198,14 @@
                 <td><strong>Digestibility &amp; Gut Bio-Health</strong></td>
                 <td class="col-greenfarms">
                   <div class="cell-highlight-title">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
                     Light on Stomach &bull; Rich in Butyric Acid
                   </div>
                   The culturing stage breaks down difficult lactose and casein proteins into gut-soothing short-chain fatty acids (butyrate).
                 </td>
                 <td>
                   <div class="cell-highlight-commercial-title">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                     Heavy &amp; Acid-Inducing
                   </div>
                   Contains unfermented dairy solids and scorched proteins that can trigger heartburn, acid reflux, and digestive sluggishness.
@@ -183,14 +217,14 @@
                 <td><strong>Cooking Smoke Point</strong></td>
                 <td class="col-greenfarms">
                   <div class="cell-highlight-title">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
                     250&deg;C (482&deg;F) High Heat Stability
                   </div>
                   Does not smoke or oxidize during deep frying, roasting, or tempering (<em>tadka</em>). Stable molecular fat bonds.
                 </td>
                 <td>
                   <div class="cell-highlight-commercial-title">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                     Smokes Early (190&deg;C &ndash; 205&deg;C)
                   </div>
                   Residual moisture and unseparated solids burn quickly, releasing bitter acrolein fumes and oxidized free radicals.
@@ -202,14 +236,14 @@
                 <td><strong>Packaging &amp; Purity</strong></td>
                 <td class="col-greenfarms">
                   <div class="cell-highlight-title">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
                     500g Premium Food-Grade Plastic Jar
                   </div>
                   Shatterproof, BPA-free airtight container. Sealed fresh without preservatives, chemical clarifiers, or coloring agents.
                 </td>
                 <td>
                   <div class="cell-highlight-commercial-title">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                     Bleached &amp; Chemically Clarified
                   </div>
                   Often treated with citric acid, anti-foaming agents, and beta-carotene dyes to mimic natural golden ghee.
@@ -218,6 +252,85 @@
             </tbody>
           </table>
         </div>
+
+        <!-- 2. Mobile Clean Stacked Comparison Cards (Visible only on < 768px) -->
+        <div class="comparison-cards-mobile">
+          <!-- Card 1 -->
+          <div class="mobile-comp-card">
+            <span class="mobile-comp-dimension">Dimension 01 &bull; Raw Material Base</span>
+            <div class="mobile-comp-greenfarms">
+              <span class="mobile-comp-badge">GreenFarms (Butter Churned)</span>
+              <strong style="color:var(--color-primary); display:block; margin-bottom:4px;">100% Cultured Village Butter (Makkhan)</strong>
+              <p style="font-size:0.9rem; color:#333; line-height:1.5;">Fresh milk cultured with natural dahi cultures, then slow-churned into pure white butter before simmering.</p>
+            </div>
+            <div class="mobile-comp-commercial">
+              <span class="mobile-comp-badge" style="color:#777;">Commercial Brands</span>
+              <strong style="color:#882222; display:block; margin-bottom:4px;">Centrifuge Raw Cream Shortcut</strong>
+              <p style="font-size:0.9rem; color:#666; line-height:1.5;">Raw cream separated mechanically and boiled at scorching heat without fermentation.</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="mobile-comp-card">
+            <span class="mobile-comp-dimension">Dimension 02 &bull; Texture &amp; Aroma</span>
+            <div class="mobile-comp-greenfarms">
+              <span class="mobile-comp-badge">GreenFarms (Butter Churned)</span>
+              <strong style="color:var(--color-primary); display:block; margin-bottom:4px;">Granular Danedar Crystals</strong>
+              <p style="font-size:0.9rem; color:#333; line-height:1.5;">Slow simmer in brass develops melt-in-mouth crystals and a sweet, nutty, caramelized fragrance.</p>
+            </div>
+            <div class="mobile-comp-commercial">
+              <span class="mobile-comp-badge" style="color:#777;">Commercial Brands</span>
+              <strong style="color:#882222; display:block; margin-bottom:4px;">Flat, Greasy, Waxy Paste</strong>
+              <p style="font-size:0.9rem; color:#666; line-height:1.5;">Scorched at high heat; crystals destroyed. Leaves oily film on palate; often artificially scented.</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="mobile-comp-card">
+            <span class="mobile-comp-dimension">Dimension 03 &bull; Digestibility &amp; Gut Health</span>
+            <div class="mobile-comp-greenfarms">
+              <span class="mobile-comp-badge">GreenFarms (Butter Churned)</span>
+              <strong style="color:var(--color-primary); display:block; margin-bottom:4px;">Light on Stomach &bull; Rich in Butyrate</strong>
+              <p style="font-size:0.9rem; color:#333; line-height:1.5;">Culturing breaks down lactose and casein residues into gut-soothing short-chain fatty acids.</p>
+            </div>
+            <div class="mobile-comp-commercial">
+              <span class="mobile-comp-badge" style="color:#777;">Commercial Brands</span>
+              <strong style="color:#882222; display:block; margin-bottom:4px;">Heavy &amp; Acid-Inducing</strong>
+              <p style="font-size:0.9rem; color:#666; line-height:1.5;">Contains scorched unfermented solids that can trigger heartburn and acid reflux.</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="mobile-comp-card">
+            <span class="mobile-comp-dimension">Dimension 04 &bull; Heat Stability</span>
+            <div class="mobile-comp-greenfarms">
+              <span class="mobile-comp-badge">GreenFarms (Butter Churned)</span>
+              <strong style="color:var(--color-primary); display:block; margin-bottom:4px;">250&deg;C High Smoke Point</strong>
+              <p style="font-size:0.9rem; color:#333; line-height:1.5;">Does not smoke or oxidize during deep frying or tempering (tadka). Completely stable fat bonds.</p>
+            </div>
+            <div class="mobile-comp-commercial">
+              <span class="mobile-comp-badge" style="color:#777;">Commercial Brands</span>
+              <strong style="color:#882222; display:block; margin-bottom:4px;">Burns Early (190&deg;C)</strong>
+              <p style="font-size:0.9rem; color:#666; line-height:1.5;">Residual moisture and milk solids burn quickly, releasing bitter acrolein fumes.</p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="mobile-comp-card">
+            <span class="mobile-comp-dimension">Dimension 05 &bull; Packaging &amp; Purity</span>
+            <div class="mobile-comp-greenfarms">
+              <span class="mobile-comp-badge">GreenFarms (Butter Churned)</span>
+              <strong style="color:var(--color-primary); display:block; margin-bottom:4px;">500g Premium Plastic Jar</strong>
+              <p style="font-size:0.9rem; color:#333; line-height:1.5;">Shatterproof, airtight food-grade container. Sealed fresh without chemical bleaches or dyes.</p>
+            </div>
+            <div class="mobile-comp-commercial">
+              <span class="mobile-comp-badge" style="color:#777;">Commercial Brands</span>
+              <strong style="color:#882222; display:block; margin-bottom:4px;">Bleached &amp; Chemically Clarified</strong>
+              <p style="font-size:0.9rem; color:#666; line-height:1.5;">Often treated with anti-foaming chemicals and artificial yellow dyes.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -291,9 +404,9 @@
         </div>
 
         <!-- Big CTA Button -->
-        <div style="text-align:center; margin-top: clamp(50px, 6vw, 80px);">
+        <div style="text-align:center; margin-top: clamp(40px, 6vw, 70px);">
           <a href="shop.html" class="btn btn-primary btn-pill-lg">
-            Taste The Butter-Churned Difference (500g Jars)
+            Taste The Butter-Churned Difference (PKR 1,500/Jar)
           </a>
         </div>
       </div>
@@ -316,7 +429,7 @@
     <div id="cart-items-container" class="cart-items-list"></div>
     <div id="cart-empty-view" class="cart-empty-state">
       <div class="cart-empty-title">Your Cart is Empty</div>
-      <p style="color:#777; font-size:0.95rem; margin-bottom:20px;">Experience the purity of traditional butter-churned Desi Ghee in 500g premium plastic jars.</p>
+      <p style="color:#777; font-size:0.9rem; margin-bottom:18px;">Experience the purity of traditional butter-churned Desi Ghee in 500g premium plastic jars.</p>
       <a href="shop.html" onclick="closeCart()" class="btn btn-primary btn-pill-sm">Explore Shop</a>
     </div>
     <div id="cart-footer-view" class="cart-drawer-footer" style="display:none;">
@@ -338,10 +451,10 @@
       </button>
       <div id="cod-modal-content">
         <div class="eyebrow">FAST &amp; SECURE CHECKOUT</div>
-        <h2 style="font-family:var(--font-display); font-size:2.2rem; color:var(--color-ink); margin-bottom:12px;">Cash on Delivery Order</h2>
-        <div style="background:var(--color-alabaster); padding:16px 20px; border-radius:16px; margin-bottom:24px; border:1px solid var(--color-border);">
+        <h2 style="font-family:var(--font-display); font-size:2rem; color:var(--color-ink); margin-bottom:10px;">Cash on Delivery Order</h2>
+        <div style="background:var(--color-alabaster); padding:14px 18px; border-radius:14px; margin-bottom:20px; border:1px solid var(--color-border);">
           <div id="cod-summary-list"></div>
-          <div style="display:flex; justify-content:space-between; margin-top:12px; padding-top:10px; border-top:1.5px solid #0d0d0d; font-size:1.15rem; font-weight:700;">
+          <div style="display:flex; justify-content:space-between; margin-top:10px; padding-top:8px; border-top:1.5px solid #0d0d0d; font-size:1.1rem; font-weight:700;">
             <span>Grand Total:</span><span id="cod-total-amount" style="color:var(--color-primary); font-family:var(--font-display);">PKR 0</span>
           </div>
         </div>
@@ -350,7 +463,7 @@
           <div class="form-group"><label class="form-label" for="customer_phone">Phone / WhatsApp Number *</label><input type="tel" id="customer_phone" name="customer_phone" class="form-control" placeholder="e.g. 0333 1234567" required></div>
           <div class="form-group"><label class="form-label" for="customer_city">Delivery City *</label><input type="text" id="customer_city" name="customer_city" class="form-control" placeholder="e.g. Lahore, Karachi, Islamabad..." required></div>
           <div class="form-group"><label class="form-label" for="customer_address">Full Street / House Address *</label><textarea id="customer_address" name="customer_address" class="form-control" placeholder="House #, Street #, Sector / Colony" required></textarea></div>
-          <button type="submit" class="btn btn-primary" style="width:100%; border-radius:12px; padding:18px; font-size:1.1rem; margin-top:12px;">Confirm Cash on Delivery Order &rarr;</button>
+          <button type="submit" class="btn btn-primary" style="width:100%; border-radius:12px; padding:16px; font-size:1.05rem; margin-top:10px;">Confirm Cash on Delivery Order &rarr;</button>
         </form>
       </div>
     </div>
@@ -364,7 +477,7 @@
           <span class="brand-wordmark" style="color:#ffffff;">GreenFarms<span class="dot" style="color:#25D366;">.</span></span>
         </a>
         <p class="footer-brand-bio">Pure Desi Ghee crafted strictly from slow-churned village butter (<em>makkhan</em>) in 500g premium food-grade plastic jars. Established in Punjab in 2006.</p>
-        <div style="margin-top:20px; font-size:0.875rem; color:#888;">
+        <div style="margin-top:18px; font-size:0.875rem; color:#888;">
           WhatsApp: <strong style="color:#ffffff;">+92 333 227 1313</strong><br>
           Email: <strong style="color:#ffffff;">thegreenfarm01@gmail.com</strong>
         </div>
@@ -390,7 +503,7 @@
       </div>
       <div>
         <div class="footer-col-title">Direct Order Assistance</div>
-        <p style="font-size:0.95rem; color:#a0a0a0; margin-bottom:16px;">Have questions about our current batch? Message us directly on WhatsApp.</p>
+        <p style="font-size:0.95rem; color:#a0a0a0; margin-bottom:14px;">Have questions about our current batch? Message us directly on WhatsApp.</p>
         <a href="https://wa.me/923332271313" target="_blank" rel="noopener" class="btn btn-secondary" style="width:100%; border-radius:12px; font-size:0.95rem; color:#ffffff; border-color:rgba(255,255,255,0.3);">
           Chat on WhatsApp (+92 333 227 1313)
         </a>
