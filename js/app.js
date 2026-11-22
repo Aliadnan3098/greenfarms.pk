@@ -1,7 +1,7 @@
 /**
  * GREENFARMS. — Interactive Web Application Engine
  * Heritage Organic Dairy • Pure Desi Ghee Made From Butter (Est. 2006)
- * Strictly 500g Premium Plastic Jars • Clean Editorial Code (Zero Emojis)
+ * Strictly 500g Premium Plastic Jars • Clean Code (Zero Emojis)
  */
 
 // Cart State Manager
@@ -33,7 +33,6 @@ const GreenFarmsCart = {
   },
 
   addItem(product) {
-    // product: { id, name, weight, price, image }
     const existing = this.items.find(i => i.id === product.id && i.weight === product.weight);
     if (existing) {
       existing.qty += (product.qty || 1);
@@ -102,7 +101,6 @@ const GreenFarmsCart = {
 
   render() {
     const count = this.getCount();
-    // Update badge in nav
     document.querySelectorAll('.cart-badge').forEach(el => {
       el.textContent = count;
       el.style.display = count > 0 ? 'flex' : 'none';
@@ -125,7 +123,6 @@ const GreenFarmsCart = {
     if (emptyState) emptyState.style.display = 'none';
     if (footerContainer) footerContainer.style.display = 'block';
 
-    // Render items
     let html = '';
     this.items.forEach((item, index) => {
       html += `
@@ -148,7 +145,6 @@ const GreenFarmsCart = {
     });
     listContainer.innerHTML = html;
 
-    // Update totals
     const subtotal = this.getSubtotal();
     const shipping = this.getShippingCost();
     const total = this.getTotal();
@@ -218,7 +214,7 @@ function closeCart() {
   }
 }
 
-// Toast notification (clean icon, zero emojis)
+// Toast notification (Zero Emojis)
 function showToast(msg) {
   let toast = document.getElementById('site-toast');
   if (!toast) {
@@ -228,7 +224,7 @@ function showToast(msg) {
     document.body.appendChild(toast);
   }
   toast.innerHTML = `
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#144528" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#144528" stroke-width="2.5" style="flex-shrink:0;"><polyline points="20 6 9 17 4 12"/></svg>
     <span>${msg}</span>
   `;
   toast.classList.add('show');
@@ -349,7 +345,7 @@ const CODCheckout = {
             <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
           <span style="display:block; font-size:0.8125rem; letter-spacing:0.12em; text-transform:uppercase; color:#144528; font-weight:700; margin-bottom:8px;">Order Confirmed &bull; Cash on Delivery</span>
-          <h2 style="font-family:'Times New Roman', Times, serif; font-size:2.4rem; color:#0d0d0d; margin-bottom:12px;">Shukriya, ${name}</h2>
+          <h2 style="font-family:'Abril Fatface', serif; font-size:2.25rem; color:#0d0d0d; margin-bottom:12px;">Shukriya, ${name}</h2>
           <p style="color:#555; max-width:440px; margin:0 auto 24px; font-size:1.05rem; line-height:1.6;">
             Your Pure Desi Ghee order <strong>#${orderId}</strong> is received. Our dispatch team will pack your 500g premium plastic jars and deliver to <strong>${city}</strong> within 2 to 3 business days.
           </p>
@@ -369,15 +365,15 @@ const CODCheckout = {
             </div>
             <div style="display:flex; justify-content:space-between; padding-top:10px; border-top:1px dashed #ccc; font-size:1.15rem;">
               <span style="font-weight:700; color:#0d0d0d;">Total Due at Doorstep:</span>
-              <span style="font-family:'Times New Roman', Times, serif; color:#144528; font-weight:700;">PKR ${total.toLocaleString()}</span>
+              <span style="font-family:'Abril Fatface', serif; color:#144528;">PKR ${total.toLocaleString()}</span>
             </div>
           </div>
 
           <div style="display:flex; justify-content:center; gap:14px; flex-wrap:wrap;">
-            <button onclick="sendOrderReceiptWhatsApp('${orderId}', '${name}', '${phone}', '${address}', '${city}', ${total})" class="btn btn-primary">
+            <button onclick="sendOrderReceiptWhatsApp('${orderId}', '${name}', '${phone}', '${address}', '${city}', ${total})" class="btn btn-primary" style="width:100%;">
               Send Confirmation on WhatsApp
             </button>
-            <button onclick="CODCheckout.close(); location.reload();" class="btn btn-secondary">
+            <button onclick="CODCheckout.close(); location.reload();" class="btn btn-secondary" style="width:100%;">
               Continue Browsing
             </button>
           </div>
@@ -427,7 +423,7 @@ function initFAQ() {
   });
 }
 
-// Interactive Product Size Selector on Grand Showcase (Strictly 500g Jars & Bundles)
+// Product Size Selector on Grand Showcase
 function initProductSizeSelector() {
   const buttons = document.querySelectorAll('.js-size-btn');
   const priceDisplay = document.getElementById('featured-price-val');
@@ -465,40 +461,72 @@ function initProductSizeSelector() {
   });
 }
 
-// Mobile Menu Navigation Toggle
+// Full-Screen Mobile Menu Navigation Toggle
 function initMobileMenu() {
-  const toggle = document.querySelector('.mobile-menu-btn');
+  const toggleBtn = document.querySelector('.mobile-menu-btn');
   const drawer = document.getElementById('mobile-nav-drawer');
-  const close = document.getElementById('mobile-nav-close');
+  const closeBtn = document.getElementById('mobile-nav-close');
+  const backdrop = document.getElementById('cart-backdrop');
 
-  if (toggle && drawer) {
-    toggle.addEventListener('click', () => {
-      drawer.classList.add('is-open');
-      document.body.style.overflow = 'hidden';
-    });
+  function openMobileNav() {
+    if (!drawer) return;
+    drawer.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
   }
-  if (close && drawer) {
-    close.addEventListener('click', () => {
-      drawer.classList.remove('is-open');
-      document.body.style.overflow = '';
+
+  function closeMobileNav() {
+    if (!drawer) return;
+    drawer.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+
+  if (toggleBtn) toggleBtn.addEventListener('click', openMobileNav);
+  if (closeBtn) closeBtn.addEventListener('click', closeMobileNav);
+
+  // Close menu when clicking on any navigation link inside
+  if (drawer) {
+    drawer.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', closeMobileNav);
     });
   }
 }
 
-// Scroll effects
+// Sticky header scroll behavior
 function initScrollHeader() {
   const header = document.querySelector('.site-header');
   if (!header) return;
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
+    if (window.scrollY > 30) {
       header.classList.add('is-scrolled');
     } else {
       header.classList.remove('is-scrolled');
     }
-  });
+  }, { passive: true });
 }
 
-// Global Document Initialization
+// Contact & Wholesale Inquiry Form Handler
+function handleContactSubmit(event) {
+  if (event) event.preventDefault();
+  const name = document.getElementById('inq_name')?.value || '';
+  const phone = document.getElementById('inq_phone')?.value || '';
+  const city = document.getElementById('inq_city')?.value || '';
+  const type = document.getElementById('inq_type')?.value || 'General Inquiry';
+  const msg = document.getElementById('inq_msg')?.value || '';
+
+  showToast(`Thank you, ${name}. Your inquiry has been received.`);
+  
+  const waText = encodeURIComponent(`Salam GreenFarms. My name is ${name} from ${city} (${phone}). Inquiry regarding ${type}: ${msg}`);
+  const waUrl = `https://wa.me/923332271313?text=${waText}`;
+
+  setTimeout(() => {
+    window.open(waUrl, '_blank');
+  }, 1000);
+
+  const form = document.getElementById('contact-form');
+  if (form) form.reset();
+}
+
+// Global Initialization
 document.addEventListener('DOMContentLoaded', () => {
   GreenFarmsCart.init();
   initFAQ();
