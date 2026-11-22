@@ -7,7 +7,7 @@
   <g transform="translate(40, 50)">
     <rect width="140" height="26" fill="#144528" rx="4"/>
     <text x="70" y="17" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#ffffff" letter-spacing="1.5" text-anchor="middle">GREENFARMS METHOD</text>
-    <text x="0" y="60" font-family="'Times New Roman', Times, serif" font-size="26" fill="#144528">Granular Danedar Crystals</text>
+    <text x="0" y="60" font-family="'Abril Fatface', serif" font-size="26" fill="#144528">Granular Danedar Crystals</text>
     <text x="0" y="85" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#555555">Micro-crystalline fat matrices formed by slow cooling.</text>
     
     <!-- Microscopic crystal representation -->
@@ -31,7 +31,7 @@
   <g transform="translate(490, 50)">
     <rect width="140" height="26" fill="#666666" rx="4"/>
     <text x="70" y="17" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#ffffff" letter-spacing="1.5" text-anchor="middle">COMMERCIAL BRANDS</text>
-    <text x="0" y="60" font-family="'Times New Roman', Times, serif" font-size="26" fill="#333333">Flat Greasy Paste</text>
+    <text x="0" y="60" font-family="'Abril Fatface', serif" font-size="26" fill="#333333">Flat Greasy Paste</text>
     <text x="0" y="85" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#777777">Direct cream boiled at high heat; crystals destroyed.</text>
     
     <!-- Flat amorphous representation -->

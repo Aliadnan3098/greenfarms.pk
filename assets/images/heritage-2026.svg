@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
   <rect width="600" height="400" fill="#0d2417"/>
   <rect x="20" y="20" width="560" height="360" fill="none" stroke="#1b4d32" stroke-width="1"/>
-  <text x="300" y="160" font-family="'Times New Roman', Times, serif" font-size="120" fill="#144528" text-anchor="middle">2026</text>
-  <text x="300" y="220" font-family="'Times New Roman', Times, serif" font-size="28" fill="#ffffff" text-anchor="middle">20 Years of Purity</text>
+  <text x="300" y="160" font-family="'Abril Fatface', serif" font-size="120" fill="#144528" text-anchor="middle">2026</text>
+  <text x="300" y="220" font-family="'Abril Fatface', serif" font-size="28" fill="#ffffff" text-anchor="middle">20 Years of Purity</text>
   <text x="300" y="260" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" fill="#b0d0c0" text-anchor="middle">Pakistan's gold standard butter-churned Pure Desi Ghee.</text>
   <line x1="240" y1="285" x2="360" y2="285" stroke="#c88a22" stroke-width="3"/>
   <text x="300" y="320" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#e5a83b" letter-spacing="3" text-anchor="middle">NATIONWIDE DOORSTEP DELIVERY</text>
