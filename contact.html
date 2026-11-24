@@ -129,9 +129,18 @@
           <div class="contact-direct-card">
             <span class="eyebrow" style="color:rgba(255,255,255,0.7);">OFFICIAL DIRECT CONCIERGE</span>
             <h2 class="contact-direct-title">Speak Directly With GreenFarms.</h2>
-            <p style="color:rgba(255,255,255,0.85); font-size:1.05rem; line-height:1.6; margin-bottom:28px;">
+            <p style="color:rgba(255,255,255,0.85); font-size:1.05rem; line-height:1.6; margin-bottom:24px;">
               We take pride in transparent, unmediated relationships with every patron. For immediate ordering assistance or questions regarding our 500g shatterproof jars, contact our team.
             </p>
+
+            <div style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.18); border-radius:18px; padding:18px; margin-bottom:24px; display:flex; align-items:center; gap:16px;">
+              <img src="assets/images/Most-Imp.jpg" alt="GreenFarms Pure Desi Ghee 500g Jar" style="width:72px; height:84px; object-fit:contain; border-radius:8px; background:#ffffff; padding:4px; flex-shrink:0;">
+              <div>
+                <div style="font-size:0.75rem; letter-spacing:0.08em; text-transform:uppercase; color:rgba(255,255,255,0.7);">DISPATCHED FROM PUNJAB</div>
+                <div style="font-family:var(--font-serif); font-size:1.15rem; font-weight:700; color:#ffffff; margin:2px 0;">500g Food-Grade Jars</div>
+                <div style="font-size:0.875rem; color:rgba(255,255,255,0.88);">PKR 1,500 &bull; Doorstep Cash on Delivery</div>
+              </div>
+            </div>
 
             <div class="contact-info-list" style="display:flex; flex-direction:column; gap:22px; margin-bottom:32px;">
               <div style="display:flex; gap:16px; align-items:flex-start;">
@@ -179,7 +188,7 @@
           <!-- Contact / Wholesale Form -->
           <div class="contact-form-card">
             <span class="eyebrow">SEND AN INQUIRY</span>
-            <h2 style="font-family:var(--font-display); font-size:2rem; color:var(--color-ink); margin-bottom:12px;">
+            <h2 style="font-family:var(--font-serif); font-weight:700; font-size:2rem; color:var(--color-ink); margin-bottom:12px;">
               Online Inquiry &amp; Wholesale
             </h2>
             <p style="color:var(--color-slate); font-size:0.95rem; margin-bottom:24px;">
@@ -230,6 +239,34 @@
       </div>
     </section>
 
+    <!-- FARMSTEAD ORIGIN & DISPATCH BANNER -->
+    <section style="background:var(--color-bg); padding: clamp(40px, 6vw, 60px) 0; border-top:1px solid var(--color-border);">
+      <div class="container" style="max-width:1100px;">
+        <div style="background:var(--color-alabaster); border:1px solid var(--color-border); border-radius:24px; padding:clamp(28px, 4vw, 44px); display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:32px; align-items:center;">
+          <div style="text-align:center;">
+            <img src="assets/images/Most-Imp.jpg" alt="GreenFarms Pure Desi Ghee 500g Jar Sealed Fresh" style="max-height:220px; width:auto; margin:0 auto; display:block; border-radius:12px; box-shadow:var(--shadow-subtle);">
+            <div style="margin-top:12px; font-size:0.8125rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:var(--color-primary);">500g Shatterproof Plastic Jar</div>
+          </div>
+          <div>
+            <span class="eyebrow">DIRECT PUNJAB DISPATCH</span>
+            <h3 style="font-family:var(--font-serif); font-weight:700; font-size:clamp(1.6rem, 2.8vw, 2.2rem); color:var(--color-ink); line-height:1.2; margin:8px 0 14px;">
+              From Our Punjab Churn Directly to Your Kitchen
+            </h3>
+            <p style="color:var(--color-slate); font-size:1rem; line-height:1.65; margin-bottom:16px;">
+              Every 500g jar is slow-simmered in small batches from whole village butter, sealed immediately with an airtight tamper-evident foil induction seal, and dispatched via express courier with doorstep Cash on Delivery.
+            </p>
+            <div style="display:flex; gap:16px; flex-wrap:wrap; font-size:0.875rem; font-weight:600; color:var(--color-primary);">
+              <span>PKR 1,500 / 500g Jar</span>
+              <span>&bull;</span>
+              <span>Free Delivery on PKR 3,000+ (2+ Jars)</span>
+              <span>&bull;</span>
+              <span>Direct WhatsApp Concierge</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- FREQUENTLY ASKED QUESTIONS ACCORDION -->
     <section style="background:var(--color-alabaster); padding: var(--section-padding-y) 0; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
       <div class="container" style="max-width:900px;">
@@ -242,11 +279,11 @@
         <div class="faq-accordion">
           
           <div class="faq-item">
-            <button class="faq-question-btn" aria-expanded="false">
+            <button class="faq-trigger" aria-expanded="false">
               <span>Why do you package exclusively in 500g premium plastic jars instead of glass?</span>
-              <span class="faq-toggle-icon">+</span>
+              <span class="faq-icon">+</span>
             </button>
-            <div class="faq-answer-pane">
+            <div class="faq-content">
               <p>
                 We use premium, certified food-grade, BPA-free plastic jars specifically to protect your order during shipping. Glass jars frequently suffer catastrophic breakage and oil leaks during courier transit across Pakistan's highways. Our 500g plastic jars are completely shatterproof and feature a tamper-evident airtight induction foil seal beneath the black threaded lid, preserving fresh butter aromatics and zero contamination.
               </p>
@@ -254,11 +291,11 @@
           </div>
 
           <div class="faq-item">
-            <button class="faq-question-btn" aria-expanded="false">
+            <button class="faq-trigger" aria-expanded="false">
               <span>How can I verify this is made from butter rather than boiled cream?</span>
-              <span class="faq-toggle-icon">+</span>
+              <span class="faq-icon">+</span>
             </button>
-            <div class="faq-answer-pane">
+            <div class="faq-content">
               <p>
                 True butter ghee naturally sets into granular, crystalline <em>danedar</em> crystals when cooled at room temperature. Cream-boiled ghee remains a flat, heavy paste that feels oily and acid-inducing. Furthermore, GreenFarms ghee is independently certified with a Reichert-Meissl (RM) value of 28.6+, confirming authentic volatile fatty acids characteristic strictly of churned butterfat.
               </p>
@@ -266,11 +303,11 @@
           </div>
 
           <div class="faq-item">
-            <button class="faq-question-btn" aria-expanded="false">
+            <button class="faq-trigger" aria-expanded="false">
               <span>How should I store the 500g jar once opened?</span>
-              <span class="faq-toggle-icon">+</span>
+              <span class="faq-icon">+</span>
             </button>
-            <div class="faq-answer-pane">
+            <div class="faq-content">
               <p>
                 Store your 500g jar in a cool, dry kitchen pantry away from direct sunlight. Always use a dry, clean spoon. <strong>Do not refrigerate</strong> the jar, as cold moisture can condense inside and disrupt the natural granular crystal matrix. Stored properly at room temperature, GreenFarms Pure Desi Ghee has a stable shelf life of 12 months.
               </p>
@@ -278,11 +315,11 @@
           </div>
 
           <div class="faq-item">
-            <button class="faq-question-btn" aria-expanded="false">
+            <button class="faq-trigger" aria-expanded="false">
               <span>What are the delivery times and shipping charges?</span>
-              <span class="faq-toggle-icon">+</span>
+              <span class="faq-icon">+</span>
             </button>
-            <div class="faq-answer-pane">
+            <div class="faq-content">
               <p>
                 We ship nationwide across Pakistan via premier express courier partners. Delivery typically takes 2 to 3 business days for major cities (Lahore, Karachi, Islamabad, Rawalpindi, Faisalabad, Multan, Peshawar) and 3 to 4 business days for outlying regions. Shipping is completely <strong>FREE on orders of PKR 3,000 or more</strong> (2 or more 500g jars). Single-jar orders incur a flat PKR 250 shipping fee.
               </p>
@@ -290,11 +327,11 @@
           </div>
 
           <div class="faq-item">
-            <button class="faq-question-btn" aria-expanded="false">
+            <button class="faq-trigger" aria-expanded="false">
               <span>What is your purity refund guarantee?</span>
-              <span class="faq-toggle-icon">+</span>
+              <span class="faq-icon">+</span>
             </button>
-            <div class="faq-answer-pane">
+            <div class="faq-content">
               <p>
                 We stand 100% behind the integrity of our ghee. If any GreenFarms jar fails accredited third-party food laboratory purity testing for genuine butterfat, we will refund your full order price immediately and reimburse 100% of your laboratory testing fees.
               </p>

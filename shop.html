@@ -227,17 +227,17 @@
 
         </div>
 
-        <!-- Master Culinary Case Section (Uses .bulk-case-card & .bulk-case-actions) -->
-        <div class="bulk-case-card" style="margin-top:clamp(40px, 6vw, 60px); background:var(--color-alabaster); border:1px solid var(--color-border); border-radius:24px; padding:clamp(28px, 4vw, 48px); display:grid; grid-template-columns: 1.4fr 1fr; gap:36px; align-items:center;">
+        <!-- Master Culinary Case Section -->
+        <div class="bulk-case-card" style="margin-top:clamp(40px, 6vw, 60px); background:var(--color-alabaster); border:1px solid var(--color-border); border-radius:24px; padding:clamp(28px, 4vw, 44px); display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:32px; align-items:center;">
           <div>
             <div class="eyebrow">GOURMET CHEF &amp; WHOLESALE CASE</div>
-            <h2 style="font-family:var(--font-display); font-size:clamp(1.85rem, 3.2vw, 2.5rem); color:var(--color-ink); line-height:1.15; margin-bottom:12px;">
+            <h2 style="font-family:var(--font-serif); font-weight:700; font-size:clamp(1.85rem, 3.2vw, 2.5rem); color:var(--color-ink); line-height:1.15; margin-bottom:12px;">
               Master Culinary Case (10 x 500g Jars)
             </h2>
-            <p style="color:var(--color-slate); font-size:1.05rem; line-height:1.6; margin-bottom:18px;">
+            <p style="color:var(--color-slate); font-size:1.025rem; line-height:1.6; margin-bottom:18px;">
               Designed for boutique bakeries, artisanal sweetmakers, high-end caterers, and connoisseur households requiring unadulterated high-smoke-point pure butter ghee. Ten individually induction-sealed 500g shatterproof jars packed inside reinforced heavy-duty shipping cartons.
             </p>
-            <div style="display:flex; gap:16px; flex-wrap:wrap; font-size:0.9rem; font-weight:600; color:var(--color-primary); margin-bottom:18px;">
+            <div style="display:flex; gap:14px; flex-wrap:wrap; font-size:0.875rem; font-weight:600; color:var(--color-primary); margin-bottom:18px;">
               <span>10 x 500g Jars (5kg Total)</span>
               <span>&bull;</span>
               <span>Save PKR 500</span>
@@ -245,19 +245,26 @@
               <span>Free Express Insured Freight</span>
             </div>
             <div style="display:flex; align-items:baseline; gap:12px;">
-              <span style="font-family:var(--font-display); font-size:2.4rem; color:var(--color-ink); font-weight:700;">PKR 14,500</span>
+              <span style="font-family:var(--font-display); font-size:2.4rem; color:var(--color-ink); font-weight:400;">PKR 14,500</span>
               <span style="text-decoration:line-through; color:#888; font-size:1.15rem;">PKR 15,000</span>
             </div>
           </div>
 
+          <div style="text-align:center; background:#ffffff; border-radius:18px; padding:20px; border:1px solid var(--color-border); box-shadow:var(--shadow-subtle);">
+            <img src="assets/images/Most-Imp.jpg" alt="Master Culinary Case 10 x 500g Jars" style="max-height:220px; width:auto; margin:0 auto; display:block; border-radius:8px;">
+            <div style="margin-top:12px; font-size:0.75rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--color-primary); background:var(--color-primary-subtle); padding:6px 14px; border-radius:100px; display:inline-block;">
+              10 x 500G JARS &bull; 5KG CASE
+            </div>
+          </div>
+
           <div class="bulk-case-actions" style="display:flex; flex-direction:column; gap:12px;">
-            <button onclick="quickAddAndCheckout('Master Culinary Case', '10 x 500g', 14500)" class="btn btn-primary" style="padding:18px; font-size:1.05rem; width:100%;">
+            <button onclick="quickAddAndCheckout('Master Culinary Case', '10 x 500g', 14500)" class="btn btn-primary" style="padding:16px; font-size:1.05rem; width:100%;">
               Order Culinary Case (PKR 14,500)
             </button>
-            <button onclick="GreenFarmsCart.addItem({id:'ghee-case-5kg', name:'Master Culinary Case', weight:'10 x 500g', price:14500, image:'assets/images/Most-Imp.jpg'})" class="btn btn-secondary" style="padding:16px; font-size:1rem; width:100%;">
+            <button onclick="GreenFarmsCart.addItem({id:'ghee-case-5kg', name:'Master Culinary Case', weight:'10 x 500g', price:14500, image:'assets/images/Most-Imp.jpg'})" class="btn btn-secondary" style="padding:15px; font-size:1rem; width:100%;">
               Add Case to Cart
             </button>
-            <a href="https://wa.me/923332271313?text=Salam%20GreenFarms.%20I%20am%20interested%20in%20ordering%20the%20Master%20Culinary%20Case%20(10%20x%20500g)%20for%20PKR%2014,500." target="_blank" rel="noopener" class="btn" style="background:#25D366; color:#ffffff; padding:16px; font-size:1rem; border-radius:100px; text-align:center; font-weight:600;">
+            <a href="https://wa.me/923332271313?text=Salam%20GreenFarms.%20I%20am%20interested%20in%20ordering%20the%20Master%20Culinary%20Case%20(10%20x%20500g)%20for%20PKR%2014,500." target="_blank" rel="noopener" class="btn" style="background:#25D366; color:#ffffff; padding:15px; font-size:1rem; border-radius:100px; text-align:center; font-weight:600;">
               Order Case via WhatsApp
             </a>
           </div>
@@ -276,38 +283,50 @@
           </p>
         </div>
 
-        <div class="nutrition-panel">
-          <div class="nutrition-grid">
-            <div class="nutrition-stat-box">
-              <span class="nutrition-stat-num">99.8g</span>
-              <span class="nutrition-stat-label">Pure Milk Fat</span>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:32px; align-items:center; margin-top:36px;">
+          <div style="text-align:center; background:#ffffff; border-radius:20px; padding:28px 20px; border:1px solid var(--color-border); box-shadow:var(--shadow-subtle);">
+            <img src="assets/images/Most-Imp.jpg" alt="Pure Desi Ghee 500g Jar Nutritional Quality" style="max-height:240px; width:auto; margin:0 auto; display:block; border-radius:8px;">
+            <div style="margin-top:14px; font-family:var(--font-serif); font-size:1.25rem; font-weight:700; color:var(--color-ink);">
+              GreenFarms 500g Food-Grade Jar
             </div>
-            <div class="nutrition-stat-box">
-              <span class="nutrition-stat-num">0.14%</span>
-              <span class="nutrition-stat-label">Moisture Content</span>
-            </div>
-            <div class="nutrition-stat-box">
-              <span class="nutrition-stat-num">3.8g</span>
-              <span class="nutrition-stat-label">Natural Butyric Acid</span>
-            </div>
-            <div class="nutrition-stat-box">
-              <span class="nutrition-stat-num">3,200 IU</span>
-              <span class="nutrition-stat-label">Vitamin A Content</span>
-            </div>
-            <div class="nutrition-stat-box">
-              <span class="nutrition-stat-num">0.0g</span>
-              <span class="nutrition-stat-label">Trans Fatty Acids</span>
-            </div>
-            <div class="nutrition-stat-box">
-              <span class="nutrition-stat-num">250&deg;C</span>
-              <span class="nutrition-stat-label">High Smoke Point</span>
+            <div style="font-size:0.875rem; color:var(--color-primary); font-weight:600; margin-top:4px;">
+              Reichert-Meissl (RM) Value: 28.6+ &bull; 99.8% Milkfat
             </div>
           </div>
 
-          <div style="margin-top:28px; text-align:center;">
-            <button onclick="LabModal.open()" class="btn btn-secondary btn-pill-sm">
-              View Complete Laboratory Certificate of Analysis &rarr;
-            </button>
+          <div class="nutrition-panel" style="margin:0;">
+            <div class="nutrition-grid" style="grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));">
+              <div class="nutrition-stat-box">
+                <span class="nutrition-stat-num">99.8g</span>
+                <span class="nutrition-stat-label">Pure Milk Fat</span>
+              </div>
+              <div class="nutrition-stat-box">
+                <span class="nutrition-stat-num">0.14%</span>
+                <span class="nutrition-stat-label">Moisture Content</span>
+              </div>
+              <div class="nutrition-stat-box">
+                <span class="nutrition-stat-num">3.8g</span>
+                <span class="nutrition-stat-label">Natural Butyric Acid</span>
+              </div>
+              <div class="nutrition-stat-box">
+                <span class="nutrition-stat-num">3,200 IU</span>
+                <span class="nutrition-stat-label">Vitamin A Content</span>
+              </div>
+              <div class="nutrition-stat-box">
+                <span class="nutrition-stat-num">0.0g</span>
+                <span class="nutrition-stat-label">Trans Fatty Acids</span>
+              </div>
+              <div class="nutrition-stat-box">
+                <span class="nutrition-stat-num">250&deg;C</span>
+                <span class="nutrition-stat-label">High Smoke Point</span>
+              </div>
+            </div>
+
+            <div style="margin-top:24px; text-align:center;">
+              <button onclick="LabModal.open()" class="btn btn-secondary btn-pill-sm">
+                View Complete Laboratory Certificate of Analysis &rarr;
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -315,24 +334,30 @@
 
     <!-- PACKAGING INTEGRITY EXPLAINER -->
     <section style="padding: var(--section-padding-y) 0; background:var(--color-bg);">
-      <div class="container" style="max-width:960px;">
+      <div class="container" style="max-width:1080px;">
         <div class="section-header-centered" style="margin-bottom: clamp(30px, 4vw, 50px);">
           <span class="eyebrow">SHATTERPROOF SAFE SHIPPING</span>
           <h2 class="section-title">Why We Specialize in 500g Premium Plastic Jars</h2>
+          <p class="section-subtitle">Engineered for absolute courier safety across Pakistan while preserving volatile butter aromatics.</p>
         </div>
 
-        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:24px;">
-          <div style="background:var(--color-alabaster); padding:24px; border-radius:16px; border:1px solid var(--color-border);">
-            <div style="font-family:var(--font-display); font-size:1.6rem; color:var(--color-primary); margin-bottom:8px;">01. Zero Transit Breakage</div>
-            <p style="font-size:0.95rem; color:var(--color-slate); line-height:1.6;">Glass jars frequently shatter during inter-city courier transit across Pakistan. Our food-grade plastic jars are shatterproof, ensuring your ghee arrives pristine.</p>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:24px; align-items:stretch;">
+          <div style="background:var(--color-alabaster); padding:28px 24px; border-radius:18px; border:1px solid var(--color-border); display:flex; flex-direction:column;">
+            <div style="font-family:var(--font-serif); font-weight:700; font-size:1.45rem; color:var(--color-primary); margin-bottom:10px;">01. Zero Transit Breakage</div>
+            <p style="font-size:0.95rem; color:var(--color-slate); line-height:1.6; margin-bottom:16px;">Glass jars frequently shatter during inter-city courier transit across Pakistan. Our food-grade plastic jars are shatterproof, ensuring your ghee arrives pristine.</p>
+            <div style="margin-top:auto; font-size:0.8125rem; font-weight:700; color:var(--color-primary); letter-spacing:0.05em; text-transform:uppercase;">100% Shatterproof Guarantee</div>
           </div>
-          <div style="background:var(--color-alabaster); padding:24px; border-radius:16px; border:1px solid var(--color-border);">
-            <div style="font-family:var(--font-display); font-size:1.6rem; color:var(--color-primary); margin-bottom:8px;">02. Airtight Induction Seal</div>
-            <p style="font-size:0.95rem; color:var(--color-slate); line-height:1.6;">Every 500g jar is protected by a tamper-evident heat induction foil seal beneath the black threaded lid, locking in volatile buttery aromatics.</p>
+          
+          <div style="background:var(--color-alabaster); padding:28px 24px; border-radius:18px; border:1px solid var(--color-border); display:flex; flex-direction:column;">
+            <div style="font-family:var(--font-serif); font-weight:700; font-size:1.45rem; color:var(--color-primary); margin-bottom:10px;">02. Airtight Induction Seal</div>
+            <p style="font-size:0.95rem; color:var(--color-slate); line-height:1.6; margin-bottom:16px;">Every 500g jar is protected by a tamper-evident heat induction foil seal beneath the black threaded lid, locking in volatile buttery aromatics and preventing any leakage.</p>
+            <div style="margin-top:auto; font-size:0.8125rem; font-weight:700; color:var(--color-primary); letter-spacing:0.05em; text-transform:uppercase;">Tamper-Evident Freshness</div>
           </div>
-          <div style="background:var(--color-alabaster); padding:24px; border-radius:16px; border:1px solid var(--color-border);">
-            <div style="font-family:var(--font-display); font-size:1.6rem; color:var(--color-primary); margin-bottom:8px;">03. Certified Food-Grade</div>
-            <p style="font-size:0.95rem; color:var(--color-slate); line-height:1.6;">Made strictly from virgin, BPA-free, certified food-grade plastic that does not react with warm clarified ghee or impart unwanted odors.</p>
+
+          <div style="background:var(--color-alabaster); padding:28px 24px; border-radius:18px; border:1px solid var(--color-border); display:flex; flex-direction:column;">
+            <div style="font-family:var(--font-serif); font-weight:700; font-size:1.45rem; color:var(--color-primary); margin-bottom:10px;">03. Certified Food-Grade</div>
+            <p style="font-size:0.95rem; color:var(--color-slate); line-height:1.6; margin-bottom:16px;">Made strictly from virgin, BPA-free, certified food-grade plastic that does not react with warm clarified ghee or impart unwanted odors or chemical residues.</p>
+            <div style="margin-top:auto; font-size:0.8125rem; font-weight:700; color:var(--color-primary); letter-spacing:0.05em; text-transform:uppercase;">BPA-Free Virgin Polymer</div>
           </div>
         </div>
       </div>
