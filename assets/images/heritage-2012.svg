@@ -1,9 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
-  <rect width="600" height="400" fill="#141414"/>
-  <rect x="20" y="20" width="560" height="360" fill="none" stroke="#282828" stroke-width="1"/>
-  <text x="300" y="160" font-family="'Abril Fatface', serif" font-size="120" fill="#222222" text-anchor="middle">2012</text>
-  <text x="300" y="220" font-family="'Abril Fatface', serif" font-size="28" fill="#ffffff" text-anchor="middle">Village Collectives</text>
-  <text x="300" y="260" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" fill="#888888" text-anchor="middle">Direct partnerships with rural Punjabi dairy farmers.</text>
-  <line x1="240" y1="285" x2="360" y2="285" stroke="#144528" stroke-width="3"/>
-  <text x="300" y="320" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#c88a22" letter-spacing="3" text-anchor="middle">FAIR FARMER WAGES • NO MIDDLEMEN</text>
+  <defs>
+    <linearGradient id="bg2012" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141c16"/>
+      <stop offset="100%" stop-color="#0a0f0c"/>
+    </linearGradient>
+    <linearGradient id="gold2012" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e5a83b"/>
+      <stop offset="100%" stop-color="#c88a22"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg2012)"/>
+  <rect x="20" y="20" width="560" height="360" fill="none" stroke="#25382a" stroke-width="1.5" rx="12"/>
+  
+  <!-- Luminous Year Watermark (Clear & Visible) -->
+  <text x="300" y="170" font-family="'Abril Fatface', Georgia, serif" font-size="130" fill="rgba(200, 138, 34, 0.18)" font-weight="400" text-anchor="middle">2012</text>
+  
+  <!-- Year Badge -->
+  <rect x="235" y="45" width="130" height="32" rx="16" fill="#144528" stroke="#c88a22" stroke-width="1"/>
+  <text x="300" y="66" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#ffffff" letter-spacing="2" text-anchor="middle">ERA 2012</text>
+  
+  <!-- Main Title in Times New Roman -->
+  <text x="300" y="225" font-family="'Times New Roman', Times, serif" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">Village Farmer Collectives</text>
+  <text x="300" y="262" font-family="'Plus Jakarta Sans', sans-serif" font-size="14.5" fill="#c0c7c2" text-anchor="middle">Direct fair-wage partnerships with rural Punjab dairy herders.</text>
+  
+  <!-- Divider Line -->
+  <line x1="220" y1="290" x2="380" y2="290" stroke="url(#gold2012)" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Sub-Badge -->
+  <text x="300" y="325" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="700" fill="#e5a83b" letter-spacing="3" text-anchor="middle">ETHICAL GRAZING • FAIR WAGES</text>
 </svg>
