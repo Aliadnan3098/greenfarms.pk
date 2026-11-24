@@ -411,13 +411,18 @@ const LabModal = {
 
 // FAQ Accordion
 function initFAQ() {
-  document.querySelectorAll('.faq-trigger').forEach(trigger => {
-    trigger.addEventListener('click', () => {
+  document.querySelectorAll('.faq-trigger, .faq-question-btn').forEach(trigger => {
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
       const parent = trigger.closest('.faq-item');
+      if (!parent) return;
       const wasOpen = parent.classList.contains('is-open');
       document.querySelectorAll('.faq-item').forEach(item => item.classList.remove('is-open'));
       if (!wasOpen) {
         parent.classList.add('is-open');
+        trigger.setAttribute('aria-expanded', 'true');
+      } else {
+        trigger.setAttribute('aria-expanded', 'false');
       }
     });
   });

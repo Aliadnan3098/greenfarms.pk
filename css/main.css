@@ -28,7 +28,8 @@
   --color-gold-glow: rgba(200, 138, 34, 0.15);
 
   /* Typography */
-  --font-display: 'Abril Fatface', serif;
+  --font-display: 'Abril Fatface', cursive, serif;
+  --font-serif: 'Times New Roman', Times, 'Playfair Display', serif;
   --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
 
   /* Scale & Spacing */
@@ -161,15 +162,24 @@ input, textarea, select {
    TYPOGRAPHY SYSTEM (ABRIL FATFACE DISPLAY + PLUS JAKARTA SANS)
    ========================================================================== */
 
-.font-display {
-  font-family: var(--font-display);
+.font-display,
+.font-abril {
+  font-family: var(--font-display) !important;
   font-weight: 400;
   letter-spacing: -0.015em;
   color: var(--color-ink);
   overflow-wrap: break-word;
 }
 
-/* Hero Headline */
+.font-serif,
+.font-times {
+  font-family: var(--font-serif) !important;
+  letter-spacing: -0.01em;
+  color: var(--color-ink);
+  overflow-wrap: break-word;
+}
+
+/* Hero Headline (Abril Fatface) */
 .hero-headline {
   font-family: var(--font-display);
   font-weight: 400;
@@ -182,25 +192,61 @@ input, textarea, select {
   word-break: break-word;
 }
 
-/* Section Headline */
-.section-headline {
-  font-family: var(--font-display);
-  font-weight: 400;
-  font-size: clamp(1.85rem, 3.8vw, 3.75rem);
-  line-height: 1.12;
-  letter-spacing: -0.02em;
+/* Section Headline & Title (Times New Roman) */
+.section-headline,
+.section-title {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: clamp(1.85rem, 3.8vw, 3.5rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
   color: var(--color-ink);
   margin-bottom: 1.25rem;
   overflow-wrap: break-word;
   word-break: break-word;
 }
 
-/* Sub-headline */
-.editorial-lead {
+/* Sub-headline & Subtitle */
+.editorial-lead,
+.section-subtitle {
+  font-family: var(--font-body);
   font-size: clamp(1.05rem, 1.3vw, 1.25rem);
   line-height: 1.65;
   color: var(--color-slate);
-  max-width: 680px;
+  max-width: 720px;
+}
+
+.section-header-centered {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto clamp(36px, 5vw, 60px);
+}
+
+.timeline-section {
+  padding: var(--section-padding-y) 0;
+  background-color: var(--color-bg);
+}
+
+/* Editorial CTA Banner Section (Deep Forest Green #144528) */
+.editorial-cta-section {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  padding: clamp(70px, 9vw, 120px) 0;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.editorial-cta-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.08) 0%, rgba(0, 0, 0, 0.35) 100%);
+  pointer-events: none;
 }
 
 /* Eyebrow Label */
@@ -783,9 +829,10 @@ input, textarea, select {
 }
 
 .product-title {
-  font-family: var(--font-display);
-  font-size: clamp(2.2rem, 3.8vw, 3.4rem);
-  line-height: 1.1;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: clamp(2rem, 3.5vw, 3.2rem);
+  line-height: 1.15;
   color: var(--color-ink);
   margin-bottom: 0.5rem;
 }
@@ -1102,7 +1149,8 @@ input, textarea, select {
 }
 
 .craft-title {
-  font-family: var(--font-display);
+  font-family: var(--font-serif);
+  font-weight: 700;
   font-size: 1.75rem;
   line-height: 1.18;
   color: var(--color-ink);
@@ -1142,6 +1190,8 @@ input, textarea, select {
   pointer-events: none;
 }
 
+.heritage-hero .container,
+.monochrome-hero-section .container,
 .heritage-hero-content {
   position: relative;
   z-index: 2;
@@ -1162,7 +1212,7 @@ input, textarea, select {
 .timeline-wrap,
 .timeline-container {
   position: relative;
-  max-width: 1040px;
+  max-width: 1080px;
   margin: 0 auto;
   padding: 40px 0;
   width: 100%;
@@ -1173,46 +1223,60 @@ input, textarea, select {
 .timeline-container::before {
   content: "";
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 130px;
+  top: 24px;
+  bottom: 24px;
+  left: 200px;
   width: 2px;
-  background: linear-gradient(180deg, var(--color-primary) 0%, #e0e4e0 100%);
+  background: linear-gradient(180deg, var(--color-primary) 0%, #cbd3cc 100%);
 }
 
 .timeline-item {
   display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: 48px;
-  margin-bottom: clamp(50px, 7vw, 90px);
+  grid-template-columns: 200px 1fr;
+  gap: 40px;
+  margin-bottom: clamp(50px, 7vw, 80px);
   position: relative;
   width: 100%;
   box-sizing: border-box;
+  align-items: flex-start;
 }
 
 .timeline-year-col {
   text-align: right;
-  padding-right: 32px;
+  padding-right: 36px;
   position: relative;
+  white-space: nowrap;
+}
+
+.timeline-year-col .numeral-huge {
+  font-family: var(--font-display) !important;
+  font-size: clamp(2.6rem, 4.2vw, 3.85rem);
+  line-height: 1.05;
+  letter-spacing: 0.01em;
+  color: var(--color-primary);
+  display: inline-block;
+  font-weight: 400 !important;
+  overflow: visible;
 }
 
 .timeline-year-col::after {
   content: "";
   position: absolute;
-  right: -5px;
-  top: 20px;
-  width: 12px;
-  height: 12px;
+  right: -7px;
+  top: 14px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   background-color: var(--color-primary);
   border: 3px solid #ffffff;
   box-shadow: 0 0 0 2px var(--color-primary);
+  z-index: 2;
 }
 
 .timeline-content-card {
   background-color: #ffffff;
   border-radius: 20px;
-  padding: clamp(28px, 3.5vw, 48px);
+  padding: clamp(28px, 3.5vw, 44px);
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-card);
   box-sizing: border-box;
@@ -1220,9 +1284,10 @@ input, textarea, select {
 }
 
 .timeline-item-title {
-  font-family: var(--font-display);
-  font-size: 1.95rem;
-  line-height: 1.18;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.85rem;
+  line-height: 1.22;
   color: var(--color-ink);
   margin-bottom: 0.85rem;
 }
@@ -1322,10 +1387,11 @@ input, textarea, select {
 }
 
 .card-product-title {
-  font-family: var(--font-display);
+  font-family: var(--font-serif);
+  font-weight: 700;
   font-size: 1.65rem;
   color: var(--color-ink);
-  line-height: 1.15;
+  line-height: 1.18;
   margin-bottom: 6px;
 }
 
@@ -1441,7 +1507,8 @@ input, textarea, select {
 }
 
 .contact-direct-title {
-  font-family: var(--font-display);
+  font-family: var(--font-serif);
+  font-weight: 700;
   font-size: 2.35rem;
   color: #ffffff;
   line-height: 1.15;
@@ -1547,20 +1614,26 @@ textarea.form-control {
   padding: 20px 0;
 }
 
-.faq-trigger {
+.faq-trigger,
+.faq-question-btn {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-align: left;
-  font-family: var(--font-display);
-  font-size: 1.35rem;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: clamp(1.1rem, 2.2vw, 1.35rem);
   color: var(--color-ink);
   gap: 16px;
   cursor: pointer;
+  background: none;
+  border: none;
+  padding: 12px 0;
 }
 
-.faq-icon {
+.faq-icon,
+.faq-toggle-icon {
   width: 28px;
   height: 28px;
   border-radius: 50%;
@@ -1575,14 +1648,16 @@ textarea.form-control {
   font-size: 1.1rem;
 }
 
-.faq-item.is-open .faq-icon {
+.faq-item.is-open .faq-icon,
+.faq-item.is-open .faq-toggle-icon {
   transform: rotate(45deg);
   background-color: var(--color-primary);
   color: #ffffff;
   border-color: var(--color-primary);
 }
 
-.faq-content {
+.faq-content,
+.faq-answer-pane {
   max-height: 0;
   overflow: hidden;
   transition: max-height var(--transition-smooth);
@@ -1591,7 +1666,8 @@ textarea.form-control {
   line-height: 1.7;
 }
 
-.faq-item.is-open .faq-content {
+.faq-item.is-open .faq-content,
+.faq-item.is-open .faq-answer-pane {
   max-height: 500px;
   margin-top: 14px;
 }
@@ -2108,17 +2184,21 @@ textarea.form-control {
   }
   .timeline-wrap::before,
   .timeline-container::before {
-    left: 40px;
+    left: 190px;
   }
   .timeline-item {
-    grid-template-columns: 80px 1fr;
-    gap: 20px;
+    grid-template-columns: 190px 1fr;
+    gap: 32px;
   }
   .timeline-year-col {
-    padding-right: 20px;
+    padding-right: 32px;
+  }
+  .timeline-year-col .numeral-huge {
+    font-size: 2.75rem !important;
+    font-weight: 400 !important;
   }
   .timeline-year-col::after {
-    right: -24px;
+    right: -7px;
   }
   .nutrition-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -2370,8 +2450,23 @@ textarea.form-control {
   }
 
   .timeline-year-col {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     text-align: left;
     padding: 0;
+  }
+
+  .timeline-year-col::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 0 2px var(--color-primary);
+    flex-shrink: 0;
   }
 
   .timeline-year-col::after {
@@ -2380,6 +2475,8 @@ textarea.form-control {
 
   .timeline-year-col .numeral-huge {
     font-size: 2.75rem !important; /* Scaled cleanly for mobile */
+    font-weight: 400 !important;
+    line-height: 1 !important;
   }
 
   .timeline-content-card {
